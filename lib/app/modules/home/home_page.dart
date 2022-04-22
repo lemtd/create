@@ -1,4 +1,5 @@
 import 'package:create/app/modules/home/design_page/header.dart';
+import 'package:create/app/modules/home/design_page/sessions/first_session.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_mobx/flutter_mobx.dart';
 import 'package:flutter_modular/flutter_modular.dart';
@@ -16,21 +17,22 @@ class _HomePageState extends ModularState<HomePage, HomeStore> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      appBar: AppBar(
-        flexibleSpace: Header(),
-        elevation: 0,
-        toolbarHeight: 164,
-        backgroundColor: Colors.transparent,
-      ),
-      extendBodyBehindAppBar: true,
-      body: Container(
-        decoration: BoxDecoration(
-          image: DecorationImage(
-            image: AssetImage("BackgroundS1.png"),
-            fit: BoxFit.cover,
-          ),
+      // appBar: AppBar(
+      //   flexibleSpace: Header(),
+      //   elevation: 0,
+      //   toolbarHeight: 164,
+      //   backgroundColor: Colors.transparent,
+      // ),
+      // extendBodyBehindAppBar: true,
+      body: SingleChildScrollView(
+        child: Column(
+          children: [
+            FirstSession(),
+            Container(
+              height: 200,
+            )
+          ],
         ),
-        child: Container(),
       ),
     );
   }
