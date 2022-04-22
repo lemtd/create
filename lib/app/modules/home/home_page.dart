@@ -1,7 +1,8 @@
+import 'package:create/app/modules/home/design_page/header.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_mobx/flutter_mobx.dart';
 import 'package:flutter_modular/flutter_modular.dart';
-import '../../shared/home_store.dart';
+import '../../shared/stores/home_store.dart';
 
 class HomePage extends StatefulWidget {
   final String title;
@@ -14,6 +15,23 @@ class HomePage extends StatefulWidget {
 class _HomePageState extends ModularState<HomePage, HomeStore> {
   @override
   Widget build(BuildContext context) {
-    return Scaffold();
+    return Scaffold(
+      appBar: AppBar(
+        flexibleSpace: Header(),
+        elevation: 0,
+        toolbarHeight: 164,
+        backgroundColor: Colors.transparent,
+      ),
+      extendBodyBehindAppBar: true,
+      body: Container(
+        decoration: BoxDecoration(
+          image: DecorationImage(
+            image: AssetImage("BackgroundS1.png"),
+            fit: BoxFit.cover,
+          ),
+        ),
+        child: Container(),
+      ),
+    );
   }
 }
