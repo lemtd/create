@@ -1,5 +1,7 @@
 import 'package:create/app/modules/home/design_page/widgets/hyperlink_widgets.dart';
+import 'package:flutter/gestures.dart';
 import 'package:flutter/material.dart';
+import 'package:url_launcher/url_launcher.dart';
 
 class Header extends StatelessWidget {
   const Header({Key? key}) : super(key: key);
@@ -7,14 +9,14 @@ class Header extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Padding(
-      padding: const EdgeInsets.only(top: 30),
+      padding: const EdgeInsets.only(top: 35),
       child: SizedBox(
         child: Row(
           mainAxisAlignment: MainAxisAlignment.spaceAround,
           children: [
-            SizedBox(
-              width: 200,
-              child: Image.asset("LogotipoCreate.png"),
+            Image.asset(
+              "LogotipoCreate.png",
+              width: MediaQuery.of(context).size.shortestSide * 0.2,
             ),
             SizedBox(
               width: MediaQuery.of(context).size.shortestSide * 0.9,
@@ -30,9 +32,10 @@ class Header extends StatelessWidget {
               ),
             ),
             SizedBox(
-              width: 250,
+              width: MediaQuery.of(context).size.shortestSide * 0.37,
               child: OutlinedButton(
-                  onPressed: () {},
+                  onPressed: () async =>
+                      await launch('https://www.instagram.com/liegesouza/'),
                   style: OutlinedButton.styleFrom(
                     side: BorderSide(
                       color: Colors.transparent,
@@ -43,7 +46,7 @@ class Header extends StatelessWidget {
                     children: [
                       Image.asset(
                         'instagram.png',
-                        width: MediaQuery.of(context).size.width * 0.03,
+                        width: MediaQuery.of(context).size.width * 0.028,
                       ),
                       Text(
                         'Nos siga no Instagram',

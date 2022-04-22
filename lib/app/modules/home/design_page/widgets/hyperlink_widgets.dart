@@ -16,7 +16,7 @@ class HyperlinkWidgets extends StatelessWidget {
           TextSpan(
               text: this.name,
               style: TextStyle(
-                color: Colors.black,
+                color: Color.fromARGB(255, 255, 255, 255),
                 fontWeight: store.cursor
                     ? store.setStateHyperlink(FontWeight.w900)
                     : store.setStateHyperlink(FontWeight.w200),
