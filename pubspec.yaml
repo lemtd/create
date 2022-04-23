@@ -79,12 +79,11 @@ flutter:
     - Elemento01S1.png
     - Elemento02S2.png
     - LogotipoCreate.png
-    - instagram.png
     - AmandaSandy.png
     - Analisedeperfil.png
     - Consultoria.png
     - Gerenciamentodemidias.png
-    - JoséPatrício.png
+    - JosePatricio.png
     - LiegeSouza.png
     - LOGO01.png
     - LOGO02.png
@@ -97,6 +96,13 @@ flutter:
     - Palestrasetreinamentos.png
     - RuthMedeiros.png
     - WebDesign.png
+    - behance_pink.png
+    - Instagram_name.png
+    - instagram_pink.png
+    - instagram_white_logo.png
+    - linkedin_icon_pink.png
+    - Pink_Instagram.png
+    - Insta_Logo.png
 
   # An image asset can refer to one or more resolution-specific "variants", see
   # https://flutter.dev/assets-and-images/#resolution-aware.
