@@ -30,6 +30,11 @@
             "sizes": "512x512",
             "type": "image/png",
             "purpose": "maskable"
+        },
+        {
+            "src": "icons/LogotipoCreate.png",
+            "sizes": "1415x420",
+            "type": "image/png"
         }
     ]
 }
