@@ -32,9 +32,9 @@
             "purpose": "maskable"
         },
         {
-            "src": "icons/LogotipoCreate.png",
-            "sizes": "1415x420",
-            "type": "image/png"
+            "src": "icons/favicon.ico",
+            "sizes": "16x16",
+            "type": "image/x-icon"
         }
     ]
 }
