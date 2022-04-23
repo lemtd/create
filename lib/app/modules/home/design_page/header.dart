@@ -1,4 +1,4 @@
-import 'package:create/app/modules/home/design_page/widgets/hyperlink_widgets.dart';
+import 'package:create/app/modules/home/design_page/widgets/hyperlink_widget.dart';
 import 'package:flutter/gestures.dart';
 import 'package:flutter/material.dart';
 import 'package:url_launcher/url_launcher.dart';
@@ -23,11 +23,11 @@ class Header extends StatelessWidget {
               child: Row(
                 mainAxisAlignment: MainAxisAlignment.spaceEvenly,
                 children: [
-                  HyperlinkWidgets(name: 'Início'),
-                  HyperlinkWidgets(name: 'Soluções'),
-                  HyperlinkWidgets(name: 'Clientes'),
-                  HyperlinkWidgets(name: 'Equipe'),
-                  HyperlinkWidgets(name: 'Entre em contato'),
+                  HyperlinkWidget(name: 'Início'),
+                  HyperlinkWidget(name: 'Soluções'),
+                  HyperlinkWidget(name: 'Clientes'),
+                  HyperlinkWidget(name: 'Equipe'),
+                  HyperlinkWidget(name: 'Entre em contato'),
                 ],
               ),
             ),
