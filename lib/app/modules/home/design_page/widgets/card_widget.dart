@@ -29,13 +29,16 @@ class CardWidget extends StatelessWidget {
             this.title,
             style: TextStyle(
                 color: Color(0xff660099),
-                fontSize: 20,
+                fontSize: MediaQuery.of(context).size.shortestSide * 0.035,
                 fontWeight: FontWeight.w900),
             textAlign: TextAlign.center,
           ),
           Text(
             this.description,
             textAlign: TextAlign.center,
+            style: TextStyle(
+                color: Color(0xff660099),
+                fontSize: MediaQuery.of(context).size.shortestSide * 0.02),
           ),
           ButtonWidget(
               widget: Text('QUERO ESSA!'),
