@@ -32,7 +32,7 @@ class Header extends StatelessWidget {
               ),
             ),
             SizedBox(
-              width: MediaQuery.of(context).size.shortestSide * 0.37,
+              width: MediaQuery.of(context).size.shortestSide * 0.33,
               child: OutlinedButton(
                   onPressed: () async =>
                       await launch('https://www.instagram.com/liegesouza/'),
@@ -45,8 +45,8 @@ class Header extends StatelessWidget {
                     mainAxisAlignment: MainAxisAlignment.spaceAround,
                     children: [
                       Image.asset(
-                        'instagram.png',
-                        width: MediaQuery.of(context).size.width * 0.028,
+                        'instagram_white_logo.png',
+                        width: MediaQuery.of(context).size.width * 0.018,
                       ),
                       Text(
                         'Nos siga no Instagram',
@@ -55,6 +55,30 @@ class Header extends StatelessWidget {
                     ],
                   )),
             )
+            // SizedBox(
+            //   width: MediaQuery.of(context).size.shortestSide * 0.34,
+            //   child: OutlinedButton(
+            //       onPressed: () async =>
+            //           await launch('https://www.instagram.com/liegesouza/'),
+            //       style: OutlinedButton.styleFrom(
+            //         side: BorderSide(
+            //           color: Colors.transparent,
+            //         ),
+            //       ),
+            //       child: Row(
+            //         mainAxisAlignment: MainAxisAlignment.spaceAround,
+            //         children: [
+            //           Text(
+            //             'Nos siga no ',
+            //             style: TextStyle(color: Colors.white),
+            //           ),
+            //           Image.asset(
+            //             'Instagram_name.png',
+            //             width: MediaQuery.of(context).size.width * 0.08,
+            //           ),
+            //         ],
+            //       )),
+            // )
           ],
         ),
       ),
