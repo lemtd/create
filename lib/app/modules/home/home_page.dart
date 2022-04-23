@@ -1,5 +1,6 @@
 import 'package:create/app/modules/home/design_page/header.dart';
 import 'package:create/app/modules/home/design_page/sessions/first_section.dart';
+import 'package:create/app/modules/home/design_page/sessions/fourth_section.dart';
 import 'package:create/app/modules/home/design_page/sessions/second_section.dart';
 import 'package:create/app/modules/home/design_page/sessions/third_section.dart';
 import 'package:flutter/material.dart';
@@ -28,7 +29,12 @@ class _HomePageState extends ModularState<HomePage, HomeStore> {
       // extendBodyBehindAppBar: true,
       body: SingleChildScrollView(
         child: Column(
-          children: [FirstSection(), SecondSection(), ThirdSection()],
+          children: [
+            FirstSection(),
+            SecondSection(),
+            ThirdSection(),
+            FourthSection(),
+          ],
         ),
       ),
     );
