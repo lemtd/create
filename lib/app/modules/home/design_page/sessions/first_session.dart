@@ -1,4 +1,5 @@
 import 'package:create/app/modules/home/design_page/header.dart';
+import 'package:create/app/modules/home/design_page/widgets/button_widget.dart';
 import 'package:flutter/material.dart';
 
 class FirstSession extends StatelessWidget {
@@ -49,12 +50,15 @@ class FirstSession extends StatelessWidget {
                     SizedBox(
                       height: MediaQuery.of(context).size.shortestSide * 0.03,
                     ),
-                    ElevatedButton(
-                      onPressed: () {},
-                      child: Text('FALE CONOSCO'),
-                      style:
-                          ElevatedButton.styleFrom(primary: Color(0xfff23064)),
-                    )
+                    ButtonWidget(
+                        widget: Text(
+                          'FALE CONOSCO',
+                          style: TextStyle(color: Colors.white, fontSize: 20),
+                        ),
+                        color: Color(0xfff23064),
+                        width: MediaQuery.of(context).size.shortestSide * 0.3,
+                        height: MediaQuery.of(context).size.shortestSide * 0.06,
+                        borderRadius: 20),
                   ],
                 ),
                 Image.asset(
