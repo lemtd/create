@@ -2,8 +2,8 @@ import 'package:create/app/modules/home/design_page/header.dart';
 import 'package:create/app/modules/home/design_page/widgets/button_widget.dart';
 import 'package:flutter/material.dart';
 
-class FirstSession extends StatelessWidget {
-  const FirstSession({Key? key}) : super(key: key);
+class FirstSection extends StatelessWidget {
+  const FirstSection({Key? key}) : super(key: key);
 
   @override
   Widget build(BuildContext context) {
