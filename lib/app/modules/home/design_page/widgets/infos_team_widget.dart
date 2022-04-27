@@ -1,4 +1,4 @@
-import 'package:create/app/modules/home/design_page/sessions/third_section.dart';
+import 'package:create/app/modules/home/design_page/sections/third_section.dart';
 import 'package:flutter/material.dart';
 import 'package:url_launcher/url_launcher.dart';
 
