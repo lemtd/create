@@ -3,7 +3,6 @@ import 'package:create/app/modules/home/design_page/sections/fifth_section.dart'
 import 'package:create/app/modules/home/design_page/sections/first_section.dart';
 import 'package:create/app/modules/home/design_page/sections/fourth_section.dart';
 import 'package:create/app/modules/home/design_page/sections/second_section.dart';
-import 'package:create/app/modules/home/design_page/sections/third_section.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_mobx/flutter_mobx.dart';
 import 'package:flutter_modular/flutter_modular.dart';
@@ -33,7 +32,6 @@ class _HomePageState extends ModularState<HomePage, HomeStore> {
           children: [
             FirstSection(),
             SecondSection(),
-            ThirdSection(),
             FourthSection(),
             FifthSection(),
           ],
