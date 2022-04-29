@@ -27,7 +27,9 @@ class FifthSection extends StatelessWidget {
                   crossAxisAlignment: CrossAxisAlignment.start,
                   children: [
                     SizedBox(
-                      width: MediaQuery.of(context).size.shortestSide * 0.6,
+                      width: MediaQuery.of(context).size.width > 950
+                          ? MediaQuery.of(context).size.shortestSide * 0.6
+                          : MediaQuery.of(context).size.shortestSide * 0.45,
                       child: Text(
                         'Acerele seus resultados digitais com a Create.',
                         style: TextStyle(
@@ -40,20 +42,37 @@ class FifthSection extends StatelessWidget {
                     Text('Vamos bater um papo?',
                         style: TextStyle(
                             color: Colors.white,
-                            fontSize: MediaQuery.of(context).size.shortestSide *
-                                0.04)),
+                            fontSize: MediaQuery.of(context).size.width > 950
+                                ? MediaQuery.of(context).size.shortestSide *
+                                    0.04
+                                : MediaQuery.of(context).size.shortestSide *
+                                    0.03)),
                     ButtonWidget(
-                        widget: Text('FALE CONOSCO'),
+                        widget: Text(
+                          'FALE CONOSCO',
+                          style: TextStyle(
+                              fontSize: MediaQuery.of(context).size.width > 950
+                                  ? MediaQuery.of(context).size.shortestSide *
+                                      0.02
+                                  : MediaQuery.of(context).size.shortestSide *
+                                      0.015),
+                        ),
                         color: Color(0xfff23064),
-                        width: MediaQuery.of(context).size.shortestSide * 0.3,
-                        height: MediaQuery.of(context).size.shortestSide * 0.06,
+                        width: MediaQuery.of(context).size.width > 950
+                            ? MediaQuery.of(context).size.shortestSide * 0.3
+                            : MediaQuery.of(context).size.shortestSide * 0.2,
+                        height: MediaQuery.of(context).size.width > 950
+                            ? MediaQuery.of(context).size.shortestSide * 0.06
+                            : MediaQuery.of(context).size.shortestSide * 0.05,
                         borderRadius: 20)
                   ],
                 ),
               ),
               Image.asset(
                 "LogotipoCreate.png",
-                width: MediaQuery.of(context).size.shortestSide * 0.6,
+                width: MediaQuery.of(context).size.width > 950
+                    ? MediaQuery.of(context).size.shortestSide * 0.6
+                    : MediaQuery.of(context).size.shortestSide * 0.3,
               )
             ],
           ),

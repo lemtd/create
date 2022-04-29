@@ -8,7 +8,8 @@ class SecondSection extends StatelessWidget {
     return SizedBox(
       height: MediaQuery.of(context).size.shortestSide * 1.2,
       child: Padding(
-        padding: EdgeInsets.symmetric(vertical: 50),
+        padding: EdgeInsets.symmetric(
+            vertical: MediaQuery.of(context).size.width > 950 ? 50 : 30),
         child: Column(
             mainAxisAlignment: MainAxisAlignment.spaceAround,
             crossAxisAlignment: CrossAxisAlignment.center,
@@ -21,7 +22,9 @@ class SecondSection extends StatelessWidget {
                     "Alguns dos nossos clientes destaques",
                     style: TextStyle(
                         color: Color(0xff660099),
-                        fontSize: 30,
+                        fontSize: MediaQuery.of(context).size.width > 950
+                            ? MediaQuery.of(context).size.shortestSide * 0.05
+                            : MediaQuery.of(context).size.shortestSide * 0.035,
                         fontWeight: FontWeight.w900),
                   ),
                   Text(
@@ -41,31 +44,47 @@ class SecondSection extends StatelessWidget {
                   children: [
                     Image.asset(
                       'LOGO01.png',
-                      width: MediaQuery.of(context).size.shortestSide * 0.2,
+                      width: MediaQuery.of(context).size.width > 950
+                          ? MediaQuery.of(context).size.width > 950
+                              ? MediaQuery.of(context).size.shortestSide * 0.2
+                              : MediaQuery.of(context).size.shortestSide * 0.15
+                          : MediaQuery.of(context).size.shortestSide * 0.15,
                     ),
                     Image.asset(
                       'LOGO02.png',
-                      width: MediaQuery.of(context).size.shortestSide * 0.2,
+                      width: MediaQuery.of(context).size.width > 950
+                          ? MediaQuery.of(context).size.shortestSide * 0.2
+                          : MediaQuery.of(context).size.shortestSide * 0.15,
                     ),
                     Image.asset(
                       'LOGO03.png',
-                      width: MediaQuery.of(context).size.shortestSide * 0.2,
+                      width: MediaQuery.of(context).size.width > 950
+                          ? MediaQuery.of(context).size.shortestSide * 0.2
+                          : MediaQuery.of(context).size.shortestSide * 0.15,
                     ),
                     Image.asset(
                       'LOGO04.png',
-                      width: MediaQuery.of(context).size.shortestSide * 0.2,
+                      width: MediaQuery.of(context).size.width > 950
+                          ? MediaQuery.of(context).size.shortestSide * 0.2
+                          : MediaQuery.of(context).size.shortestSide * 0.15,
                     ),
                     Image.asset(
                       'LOGO05.png',
-                      width: MediaQuery.of(context).size.shortestSide * 0.2,
+                      width: MediaQuery.of(context).size.width > 950
+                          ? MediaQuery.of(context).size.shortestSide * 0.2
+                          : MediaQuery.of(context).size.shortestSide * 0.15,
                     ),
                     Image.asset(
                       'LOGO06.png',
-                      width: MediaQuery.of(context).size.shortestSide * 0.2,
+                      width: MediaQuery.of(context).size.width > 950
+                          ? MediaQuery.of(context).size.shortestSide * 0.2
+                          : MediaQuery.of(context).size.shortestSide * 0.15,
                     ),
                     Image.asset(
                       'LOGO07.png',
-                      width: MediaQuery.of(context).size.shortestSide * 0.2,
+                      width: MediaQuery.of(context).size.width > 950
+                          ? MediaQuery.of(context).size.shortestSide * 0.2
+                          : MediaQuery.of(context).size.shortestSide * 0.15,
                     ),
                   ],
                 ),

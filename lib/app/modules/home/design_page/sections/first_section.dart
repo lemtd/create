@@ -15,12 +15,12 @@ class FirstSection extends StatelessWidget {
         ),
       ),
       child: SizedBox(
-        height: MediaQuery.of(context).size.shortestSide * 1.1,
+        height: MediaQuery.of(context).size.shortestSide * 1,
         child: Column(
           children: [
             Header(),
             SizedBox(
-              height: 55,
+              height: 85,
             ),
             Row(
               mainAxisAlignment: MainAxisAlignment.spaceEvenly,

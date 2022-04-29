@@ -21,7 +21,9 @@ class FourthSection extends StatelessWidget {
                   'Conheça a equipe por trás da Create',
                   style: TextStyle(
                     color: Color(0xff660099),
-                    fontSize: MediaQuery.of(context).size.shortestSide * 0.05,
+                    fontSize: MediaQuery.of(context).size.width > 950
+                        ? MediaQuery.of(context).size.shortestSide * 0.05
+                        : MediaQuery.of(context).size.shortestSide * 0.035,
                     fontWeight: FontWeight.w900,
                   ),
                 ),
@@ -36,6 +38,7 @@ class FourthSection extends StatelessWidget {
               ],
             ),
             Row(
+              mainAxisAlignment: MainAxisAlignment.spaceEvenly,
               children: [
                 InfosTeamWidget(
                   career: "Estrategista Digital",
@@ -60,6 +63,7 @@ class FourthSection extends StatelessWidget {
               ],
             ),
             Row(
+              mainAxisAlignment: MainAxisAlignment.spaceEvenly,
               children: [
                 InfosTeamWidget(
                   career: "Designer",

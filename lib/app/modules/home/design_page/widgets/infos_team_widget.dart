@@ -1,4 +1,3 @@
-import 'package:create/app/modules/home/design_page/sections/third_section.dart';
 import 'package:flutter/material.dart';
 import 'package:url_launcher/url_launcher.dart';
 
@@ -24,14 +23,18 @@ class InfosTeamWidget extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return SizedBox(
-        width: MediaQuery.of(context).size.shortestSide * 1,
+        width: MediaQuery.of(context).size.width > 950
+            ? MediaQuery.of(context).size.shortestSide * 0.7
+            : MediaQuery.of(context).size.shortestSide * 0.6,
         child: Row(
           crossAxisAlignment: CrossAxisAlignment.center,
           mainAxisAlignment: MainAxisAlignment.center,
           children: [
             Image.asset(
               teamImage,
-              width: MediaQuery.of(context).size.shortestSide * 0.4,
+              width: MediaQuery.of(context).size.width > 1045
+                  ? MediaQuery.of(context).size.shortestSide * 0.35
+                  : MediaQuery.of(context).size.shortestSide * 0.25,
             ),
             SizedBox(
               height: MediaQuery.of(context).size.shortestSide * 0.35,
@@ -42,7 +45,9 @@ class InfosTeamWidget extends StatelessWidget {
                   Text(
                     name,
                     style: TextStyle(
-                      fontSize: MediaQuery.of(context).size.shortestSide * 0.04,
+                      fontSize: MediaQuery.of(context).size.width > 1045
+                          ? MediaQuery.of(context).size.shortestSide * 0.035
+                          : MediaQuery.of(context).size.shortestSide * 0.03,
                       color: Color(0xff660099),
                       fontWeight: FontWeight.w900,
                     ),
@@ -50,17 +55,23 @@ class InfosTeamWidget extends StatelessWidget {
                   Text(career,
                       style: TextStyle(
                         fontSize:
-                            MediaQuery.of(context).size.shortestSide * 0.025,
+                            MediaQuery.of(context).size.shortestSide * 0.017,
                         color: Color(0xff660099),
                         fontWeight: FontWeight.w900,
                       )),
                   SizedBox(
-                      width: MediaQuery.of(context).size.shortestSide * 0.35,
+                      width: MediaQuery.of(context).size.width > 1045
+                          ? MediaQuery.of(context).size.shortestSide * 0.35
+                          : MediaQuery.of(context).size.shortestSide * 0.25,
                       child: Text(description,
                           style: TextStyle(
-                            color: Color(0xff660099),
-                            fontWeight: FontWeight.w900,
-                          ))),
+                              color: Color(0xff660099),
+                              fontWeight: FontWeight.w900,
+                              fontSize: MediaQuery.of(context).size.width > 1045
+                                  ? MediaQuery.of(context).size.shortestSide *
+                                      0.018
+                                  : MediaQuery.of(context).size.shortestSide *
+                                      0.015))),
                   Row(
                     children: [
                       IconButton(
