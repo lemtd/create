@@ -17,19 +17,21 @@ class CardWidget extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return SizedBox(
-      height: MediaQuery.of(context).size.shortestSide * 0.5,
-      width: MediaQuery.of(context).size.shortestSide * 0.4,
+      height: MediaQuery.of(context).size.shortestSide * 0.4,
+      width: MediaQuery.of(context).size.longestSide > 990
+          ? MediaQuery.of(context).size.shortestSide * 0.3
+          : MediaQuery.of(context).size.shortestSide * 0.25,
       child: Column(
         mainAxisAlignment: MainAxisAlignment.spaceBetween,
         crossAxisAlignment: CrossAxisAlignment.center,
         children: [
           Image.asset(this.image,
-              width: MediaQuery.of(context).size.shortestSide * 0.2),
+              width: MediaQuery.of(context).size.shortestSide * 0.1),
           Text(
             this.title,
             style: TextStyle(
                 color: Color(0xff660099),
-                fontSize: MediaQuery.of(context).size.shortestSide * 0.035,
+                fontSize: MediaQuery.of(context).size.shortestSide * 0.025,
                 fontWeight: FontWeight.w900),
             textAlign: TextAlign.center,
           ),
@@ -43,8 +45,8 @@ class CardWidget extends StatelessWidget {
           ButtonWidget(
               widget: Text('QUERO ESSA!'),
               color: Color(0xfff23064),
-              width: MediaQuery.of(context).size.shortestSide * 0.3,
-              height: MediaQuery.of(context).size.shortestSide * 0.06,
+              width: MediaQuery.of(context).size.shortestSide * 0.2,
+              height: MediaQuery.of(context).size.shortestSide * 0.05,
               borderRadius: 20)
         ],
       ),
