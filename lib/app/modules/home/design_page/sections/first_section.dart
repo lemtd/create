@@ -31,7 +31,9 @@ class FirstSection extends StatelessWidget {
                   crossAxisAlignment: CrossAxisAlignment.start,
                   children: [
                     SizedBox(
-                      width: MediaQuery.of(context).size.shortestSide * 0.65,
+                      width: MediaQuery.of(context).size.shortestSide > 950
+                          ? MediaQuery.of(context).size.shortestSide * 0.65
+                          : MediaQuery.of(context).size.shortestSide * 0.55,
                       child: Text(
                         'Potencialize os resultados digitais da sua empresa',
                         style: TextStyle(
@@ -45,7 +47,13 @@ class FirstSection extends StatelessWidget {
                     ),
                     Text(
                       'Com a Create, sua marca vai além.',
-                      style: TextStyle(fontSize: 25, color: Colors.white),
+                      style: TextStyle(
+                          fontSize: MediaQuery.of(context).size.shortestSide >
+                                  950
+                              ? MediaQuery.of(context).size.shortestSide * 0.045
+                              : MediaQuery.of(context).size.shortestSide *
+                                  0.035,
+                          color: Colors.white),
                     ),
                     SizedBox(
                       height: MediaQuery.of(context).size.shortestSide * 0.03,
@@ -63,7 +71,9 @@ class FirstSection extends StatelessWidget {
                 ),
                 Image.asset(
                   'Elemento01S1.png',
-                  width: MediaQuery.of(context).size.shortestSide * 0.8,
+                  width: MediaQuery.of(context).size.shortestSide > 950
+                      ? MediaQuery.of(context).size.shortestSide * 0.8
+                      : MediaQuery.of(context).size.shortestSide * 0.6,
                 )
               ],
             ),

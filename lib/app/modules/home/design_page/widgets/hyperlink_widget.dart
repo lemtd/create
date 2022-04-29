@@ -3,24 +3,30 @@ import 'package:flutter/gestures.dart';
 import 'package:flutter/material.dart';
 import 'package:provider/provider.dart';
 
-class HyperlinkWidget extends StatelessWidget {
+class HyperlinkWidget extends StatefulWidget {
   const HyperlinkWidget({Key? key, required this.name}) : super(key: key);
   final String name;
 
   @override
+  State<HyperlinkWidget> createState() => _HyperlinkWidgetState();
+}
+
+class _HyperlinkWidgetState extends State<HyperlinkWidget> {
+  @override
   Widget build(BuildContext context) {
-    final store = Provider.of<HomeStore>(context);
+    var hover = false;
+    // final store = Provider.of<HomeStore>(context);
     return RichText(
       text: TextSpan(
         children: [
           TextSpan(
-              text: this.name,
+              text: this.widget.name,
               style: TextStyle(
                 color: Color.fromARGB(255, 255, 255, 255),
-                fontWeight: store.cursor
-                    ? store.setStateHyperlink(FontWeight.w900)
-                    : store.setStateHyperlink(FontWeight.w200),
-                fontSize: 18,
+                fontWeight: hover ? FontWeight.w900 : FontWeight.w200,
+                fontSize: MediaQuery.of(context).size.longestSide > 950
+                    ? MediaQuery.of(context).size.shortestSide * 0.03
+                    : MediaQuery.of(context).size.shortestSide * 0.02,
                 letterSpacing: 0.05,
               ),
               recognizer: TapGestureRecognizer()
@@ -34,10 +40,16 @@ class HyperlinkWidget extends StatelessWidget {
                 },
               mouseCursor: SystemMouseCursors.click,
               onEnter: (event) {
-                store.setStateCursor();
+                // store.setStateCursor();
+                setState(() {
+                  hover = true;
+                });
               },
               onExit: (event) {
-                store.setStateCursor();
+                // store.setStateCursor();
+                setState(() {
+                  hover = false;
+                });
               }),
         ],
       ),

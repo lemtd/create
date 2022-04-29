@@ -16,7 +16,9 @@ class Header extends StatelessWidget {
           children: [
             Image.asset(
               "LogotipoCreate.png",
-              width: MediaQuery.of(context).size.shortestSide * 0.2,
+              width: MediaQuery.of(context).size.longestSide > 950
+                  ? MediaQuery.of(context).size.shortestSide * 0.2
+                  : MediaQuery.of(context).size.shortestSide * 0.13,
             ),
             SizedBox(
               width: MediaQuery.of(context).size.shortestSide * 0.9,
@@ -32,7 +34,9 @@ class Header extends StatelessWidget {
               ),
             ),
             SizedBox(
-              width: MediaQuery.of(context).size.shortestSide * 0.33,
+              width: MediaQuery.of(context).size.width > 950
+                  ? MediaQuery.of(context).size.shortestSide * 0.33
+                  : MediaQuery.of(context).size.shortestSide * 0.25,
               child: OutlinedButton(
                   onPressed: () async =>
                       await launch('https://www.instagram.com/liegesouza/'),
@@ -50,7 +54,13 @@ class Header extends StatelessWidget {
                       ),
                       Text(
                         'Nos siga no Instagram',
-                        style: TextStyle(color: Colors.white),
+                        style: TextStyle(
+                            color: Colors.white,
+                            fontSize: MediaQuery.of(context).size.width > 950
+                                ? MediaQuery.of(context).size.shortestSide *
+                                    0.02
+                                : MediaQuery.of(context).size.shortestSide *
+                                    0.015),
                       ),
                     ],
                   )),

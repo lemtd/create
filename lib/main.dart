@@ -6,6 +6,4 @@ import 'package:provider/provider.dart';
 import 'app/app_module.dart';
 import 'app/app_widget.dart';
 
-void main() => runApp(MultiProvider(
-    providers: [Provider<HomeStore>(create: (_) => HomeStore())],
-    child: ModularApp(module: AppModule(), child: AppWidget())));
+void main() => runApp(ModularApp(module: AppModule(), child: AppWidget()));

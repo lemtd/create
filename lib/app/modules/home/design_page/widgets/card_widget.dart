@@ -17,7 +17,9 @@ class CardWidget extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return SizedBox(
-      height: MediaQuery.of(context).size.shortestSide * 0.4,
+      height: MediaQuery.of(context).size.longestSide > 990
+          ? MediaQuery.of(context).size.shortestSide * 0.4
+          : MediaQuery.of(context).size.shortestSide * 0.45,
       width: MediaQuery.of(context).size.longestSide > 990
           ? MediaQuery.of(context).size.shortestSide * 0.3
           : MediaQuery.of(context).size.shortestSide * 0.25,
@@ -43,10 +45,14 @@ class CardWidget extends StatelessWidget {
                 fontSize: MediaQuery.of(context).size.shortestSide * 0.02),
           ),
           ButtonWidget(
-              widget: Text('QUERO ESSA!'),
+              widget: Text(
+                'QUERO ESSA!',
+                style: TextStyle(
+                    fontSize: MediaQuery.of(context).size.shortestSide * 0.02),
+              ),
               color: Color(0xfff23064),
-              width: MediaQuery.of(context).size.shortestSide * 0.2,
-              height: MediaQuery.of(context).size.shortestSide * 0.05,
+              width: MediaQuery.of(context).size.shortestSide * 0.15,
+              height: MediaQuery.of(context).size.shortestSide * 0.045,
               borderRadius: 20)
         ],
       ),
