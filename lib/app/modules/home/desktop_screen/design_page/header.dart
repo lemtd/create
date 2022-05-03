@@ -39,7 +39,7 @@ class Header extends StatelessWidget {
                   : MediaQuery.of(context).size.shortestSide * 0.25,
               child: OutlinedButton(
                   onPressed: () async =>
-                      await launch('https://www.instagram.com/liegesouza/'),
+                      await launch('https://www.instagram.com/sejacreate/'),
                   style: OutlinedButton.styleFrom(
                     side: BorderSide(
                       color: Colors.transparent,
