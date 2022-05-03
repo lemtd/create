@@ -1,7 +1,7 @@
 import 'dart:html';
-
-import 'package:create/app/modules/home/design_page/widgets/button_widget.dart';
 import 'package:flutter/material.dart';
+
+import 'button_widget.dart';
 
 class CardWidget extends StatelessWidget {
   const CardWidget(

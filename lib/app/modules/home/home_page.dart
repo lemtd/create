@@ -1,9 +1,5 @@
-import 'package:create/app/modules/home/design_page/header.dart';
-import 'package:create/app/modules/home/design_page/sections/fifth_section.dart';
-import 'package:create/app/modules/home/design_page/sections/first_section.dart';
-import 'package:create/app/modules/home/design_page/sections/fourth_section.dart';
-import 'package:create/app/modules/home/design_page/sections/second_section.dart';
-import 'package:create/app/modules/home/design_page/sections/third_section.dart';
+import 'package:create/app/modules/home/desktop_screen/desktop_screen.dart';
+import 'package:create/app/modules/home/mobile_screen/mobile_screen.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_mobx/flutter_mobx.dart';
 import 'package:flutter_modular/flutter_modular.dart';
@@ -28,17 +24,9 @@ class _HomePageState extends ModularState<HomePage, HomeStore> {
       //   backgroundColor: Colors.transparent,
       // ),
       // extendBodyBehindAppBar: true,
-      body: SingleChildScrollView(
-        child: Column(
-          children: [
-            FirstSection(),
-            SecondSection(),
-            ThirdSection(),
-            FourthSection(),
-            FifthSection(),
-          ],
-        ),
-      ),
+      body: MediaQuery.of(context).size.width > 950
+          ? DesktopScreen()
+          : MobileScreen(),
     );
   }
 }

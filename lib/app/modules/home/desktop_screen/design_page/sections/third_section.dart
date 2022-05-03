@@ -1,4 +1,4 @@
-import 'package:create/app/modules/home/design_page/widgets/card_widget.dart';
+import 'package:create/app/modules/home/widgets/card_widget.dart';
 import 'package:flutter/material.dart';
 
 class ThirdSection extends StatelessWidget {

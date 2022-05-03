@@ -1,5 +1,5 @@
-import 'package:create/app/modules/home/design_page/header.dart';
-import 'package:create/app/modules/home/design_page/widgets/button_widget.dart';
+import 'package:create/app/modules/home/desktop_screen/design_page/header.dart';
+import 'package:create/app/modules/home/widgets/button_widget.dart';
 import 'package:flutter/material.dart';
 
 class FirstSection extends StatelessWidget {

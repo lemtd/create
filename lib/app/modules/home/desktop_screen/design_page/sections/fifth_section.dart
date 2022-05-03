@@ -1,4 +1,4 @@
-import 'package:create/app/modules/home/design_page/widgets/button_widget.dart';
+import 'package:create/app/modules/home/widgets/button_widget.dart';
 import 'package:flutter/material.dart';
 
 class FifthSection extends StatelessWidget {
