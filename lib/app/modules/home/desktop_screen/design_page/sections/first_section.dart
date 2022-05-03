@@ -59,14 +59,16 @@ class FirstSection extends StatelessWidget {
                       height: MediaQuery.of(context).size.shortestSide * 0.03,
                     ),
                     ButtonWidget(
-                        widget: Text(
-                          'FALE CONOSCO',
-                          style: TextStyle(color: Colors.white, fontSize: 20),
-                        ),
-                        color: Color(0xfff23064),
-                        width: MediaQuery.of(context).size.shortestSide * 0.3,
-                        height: MediaQuery.of(context).size.shortestSide * 0.06,
-                        borderRadius: 20),
+                      widget: Text(
+                        'FALE CONOSCO',
+                        style: TextStyle(color: Colors.white, fontSize: 20),
+                      ),
+                      color: Color(0xfff23064),
+                      width: MediaQuery.of(context).size.shortestSide * 0.3,
+                      height: MediaQuery.of(context).size.shortestSide * 0.06,
+                      borderRadius: 20,
+                      url: "https://api.whatsapp.com/send?phone=5584988254344",
+                    ),
                   ],
                 ),
                 Image.asset(

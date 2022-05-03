@@ -45,15 +45,17 @@ class CardWidget extends StatelessWidget {
                 fontSize: MediaQuery.of(context).size.shortestSide * 0.02),
           ),
           ButtonWidget(
-              widget: Text(
-                'QUERO ESSA!',
-                style: TextStyle(
-                    fontSize: MediaQuery.of(context).size.shortestSide * 0.02),
-              ),
-              color: Color(0xfff23064),
-              width: MediaQuery.of(context).size.shortestSide * 0.15,
-              height: MediaQuery.of(context).size.shortestSide * 0.045,
-              borderRadius: 20)
+            widget: Text(
+              'QUERO ESSA!',
+              style: TextStyle(
+                  fontSize: MediaQuery.of(context).size.shortestSide * 0.02),
+            ),
+            color: Color(0xfff23064),
+            width: MediaQuery.of(context).size.shortestSide * 0.15,
+            height: MediaQuery.of(context).size.shortestSide * 0.045,
+            borderRadius: 20,
+            url: "https://api.whatsapp.com/send?phone=5584988254344",
+          )
         ],
       ),
     );
