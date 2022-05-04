@@ -10,7 +10,8 @@ class InfosTeamWidget extends StatelessWidget {
       required this.teamImage,
       required this.urlInstagram,
       this.urlLinkedin,
-      this.urlBehance})
+      this.urlBehance,
+      required this.responsivity})
       : super(key: key);
   final String teamImage;
   final String name;
@@ -19,22 +20,27 @@ class InfosTeamWidget extends StatelessWidget {
   final String urlInstagram;
   final String? urlLinkedin;
   final String? urlBehance;
+  final bool responsivity;
 
   @override
   Widget build(BuildContext context) {
     return SizedBox(
-        width: MediaQuery.of(context).size.width > 950
-            ? MediaQuery.of(context).size.shortestSide * 0.7
-            : MediaQuery.of(context).size.shortestSide * 0.6,
+        width: responsivity
+            ? MediaQuery.of(context).size.shortestSide * 1
+            : MediaQuery.of(context).size.width > 950
+                ? MediaQuery.of(context).size.shortestSide * 0.7
+                : MediaQuery.of(context).size.shortestSide * 0.6,
         child: Row(
           crossAxisAlignment: CrossAxisAlignment.center,
           mainAxisAlignment: MainAxisAlignment.center,
           children: [
             Image.asset(
               teamImage,
-              width: MediaQuery.of(context).size.width > 1045
+              width: responsivity
                   ? MediaQuery.of(context).size.shortestSide * 0.35
-                  : MediaQuery.of(context).size.shortestSide * 0.25,
+                  : MediaQuery.of(context).size.width > 1045
+                      ? MediaQuery.of(context).size.shortestSide * 0.35
+                      : MediaQuery.of(context).size.shortestSide * 0.25,
             ),
             SizedBox(
               height: MediaQuery.of(context).size.shortestSide * 0.35,
@@ -45,33 +51,45 @@ class InfosTeamWidget extends StatelessWidget {
                   Text(
                     name,
                     style: TextStyle(
-                      fontSize: MediaQuery.of(context).size.width > 1045
-                          ? MediaQuery.of(context).size.shortestSide * 0.035
-                          : MediaQuery.of(context).size.shortestSide * 0.03,
+                      fontSize: responsivity
+                          ? MediaQuery.of(context).size.shortestSide * 0.042
+                          : MediaQuery.of(context).size.width > 1045
+                              ? MediaQuery.of(context).size.shortestSide * 0.035
+                              : MediaQuery.of(context).size.shortestSide * 0.03,
                       color: Color(0xff660099),
                       fontWeight: FontWeight.w900,
                     ),
                   ),
                   Text(career,
                       style: TextStyle(
-                        fontSize:
-                            MediaQuery.of(context).size.shortestSide * 0.017,
+                        fontSize: responsivity
+                            ? MediaQuery.of(context).size.shortestSide * 0.025
+                            : MediaQuery.of(context).size.shortestSide * 0.017,
                         color: Color(0xff660099),
                         fontWeight: FontWeight.w900,
                       )),
                   SizedBox(
-                      width: MediaQuery.of(context).size.width > 1045
-                          ? MediaQuery.of(context).size.shortestSide * 0.35
-                          : MediaQuery.of(context).size.shortestSide * 0.25,
+                      width: responsivity
+                          ? MediaQuery.of(context).size.shortestSide * 0.45
+                          : MediaQuery.of(context).size.width > 1045
+                              ? MediaQuery.of(context).size.shortestSide * 0.35
+                              : MediaQuery.of(context).size.shortestSide * 0.25,
                       child: Text(description,
                           style: TextStyle(
                               color: Color(0xff660099),
                               fontWeight: FontWeight.w900,
-                              fontSize: MediaQuery.of(context).size.width > 1045
+                              fontSize: responsivity
                                   ? MediaQuery.of(context).size.shortestSide *
-                                      0.018
-                                  : MediaQuery.of(context).size.shortestSide *
-                                      0.015))),
+                                      0.02
+                                  : MediaQuery.of(context).size.width > 1045
+                                      ? MediaQuery.of(context)
+                                              .size
+                                              .shortestSide *
+                                          0.018
+                                      : MediaQuery.of(context)
+                                              .size
+                                              .shortestSide *
+                                          0.015))),
                   Row(
                     children: [
                       IconButton(
@@ -81,7 +99,9 @@ class InfosTeamWidget extends StatelessWidget {
                         },
                         icon: Image.asset(
                           'Pink_Instagram.png',
-                          width: MediaQuery.of(context).size.width * 0.03,
+                          width: responsivity
+                              ? MediaQuery.of(context).size.shortestSide * 0.04
+                              : MediaQuery.of(context).size.width * 0.03,
                         ),
                       ),
                       IconButton(
@@ -91,7 +111,9 @@ class InfosTeamWidget extends StatelessWidget {
                         },
                         icon: Image.asset(
                           'linkedin_icon_pink.png',
-                          width: MediaQuery.of(context).size.width * 0.03,
+                          width: responsivity
+                              ? MediaQuery.of(context).size.shortestSide * 0.04
+                              : MediaQuery.of(context).size.width * 0.03,
                         ),
                       ),
                       urlBehance == null
@@ -104,7 +126,10 @@ class InfosTeamWidget extends StatelessWidget {
                               },
                               icon: Image.asset(
                                 'behance_pink.png',
-                                width: MediaQuery.of(context).size.width * 0.03,
+                                width: responsivity
+                                    ? MediaQuery.of(context).size.shortestSide *
+                                        0.04
+                                    : MediaQuery.of(context).size.width * 0.03,
                               ),
                             ),
                     ],

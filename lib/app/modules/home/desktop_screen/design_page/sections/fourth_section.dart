@@ -49,6 +49,7 @@ class FourthSection extends StatelessWidget {
                   urlInstagram: "https://www.instagram.com/josepatriciosn/",
                   urlLinkedin:
                       "https://www.linkedin.com/in/jos%C3%A9-patr%C3%ADcio-883217168/",
+                  responsivity: false,
                 ),
                 InfosTeamWidget(
                   career: "Estrategista Digital",
@@ -59,6 +60,7 @@ class FourthSection extends StatelessWidget {
                   urlInstagram: "https://www.instagram.com/ruthmedeiros_/",
                   urlLinkedin:
                       "https://www.linkedin.com/in/ruth-medeiros-405087221/",
+                  responsivity: false,
                 ),
               ],
             ),
@@ -75,6 +77,7 @@ class FourthSection extends StatelessWidget {
                   urlLinkedin: "https://www.linkedin.com/in/liegesouza/",
                   urlBehance:
                       "https://www.behance.net/gallery/134814161/Portfolio-e-Curriculo",
+                  responsivity: false,
                 ),
                 InfosTeamWidget(
                   career: "Fotógrafa",
@@ -84,6 +87,7 @@ class FourthSection extends StatelessWidget {
                   teamImage: "AmandaSandy.png",
                   urlInstagram:
                       "https://www.instagram.com/amandasandyfotografia/",
+                  responsivity: false,
                 ),
               ],
             )
