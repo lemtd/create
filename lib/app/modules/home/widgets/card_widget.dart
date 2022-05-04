@@ -20,7 +20,7 @@ class CardWidget extends StatelessWidget {
   Widget build(BuildContext context) {
     return SizedBox(
       height: this.responsivity
-          ? MediaQuery.of(context).size.shortestSide * 0.35
+          ? MediaQuery.of(context).size.shortestSide * 0.7
           : MediaQuery.of(context).size.longestSide > 990
               ? MediaQuery.of(context).size.shortestSide * 0.4
               : MediaQuery.of(context).size.shortestSide * 0.45,
@@ -48,7 +48,9 @@ class CardWidget extends StatelessWidget {
             textAlign: TextAlign.center,
             style: TextStyle(
                 color: Color(0xff660099),
-                fontSize: MediaQuery.of(context).size.shortestSide * 0.02),
+                fontSize: responsivity
+                    ? MediaQuery.of(context).size.shortestSide * 0.04
+                    : MediaQuery.of(context).size.shortestSide * 0.02),
           ),
           ButtonWidget(
             widget: Text(

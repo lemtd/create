@@ -7,7 +7,7 @@ class Team extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return SizedBox(
-      height: MediaQuery.of(context).size.shortestSide * 2,
+      height: MediaQuery.of(context).size.shortestSide * 2.3,
       child: Column(children: [
         SizedBox(
           height: MediaQuery.of(context).size.shortestSide * 0.05,

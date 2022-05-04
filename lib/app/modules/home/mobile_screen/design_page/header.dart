@@ -18,7 +18,7 @@ class Header extends StatelessWidget {
           padding: const EdgeInsets.only(top: 35),
           child: SizedBox(
               width: MediaQuery.of(context).size.width,
-              height: MediaQuery.of(context).size.shortestSide * 1.3,
+              height: MediaQuery.of(context).size.shortestSide * 1.4,
               child: Column(
                 children: [
                   SizedBox(

@@ -43,7 +43,9 @@ class InfosTeamWidget extends StatelessWidget {
                       : MediaQuery.of(context).size.shortestSide * 0.25,
             ),
             SizedBox(
-              height: MediaQuery.of(context).size.shortestSide * 0.35,
+              height: responsivity
+                  ? MediaQuery.of(context).size.shortestSide * 0.4
+                  : MediaQuery.of(context).size.shortestSide * 0.35,
               child: Column(
                 crossAxisAlignment: CrossAxisAlignment.start,
                 mainAxisAlignment: MainAxisAlignment.spaceEvenly,
