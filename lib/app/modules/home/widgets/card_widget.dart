@@ -8,21 +8,27 @@ class CardWidget extends StatelessWidget {
       {Key? key,
       required this.description,
       required this.image,
-      required this.title})
+      required this.title,
+      required this.responsivity})
       : super(key: key);
   final String image;
   final String title;
   final String description;
+  final bool responsivity;
 
   @override
   Widget build(BuildContext context) {
     return SizedBox(
-      height: MediaQuery.of(context).size.longestSide > 990
-          ? MediaQuery.of(context).size.shortestSide * 0.4
-          : MediaQuery.of(context).size.shortestSide * 0.45,
-      width: MediaQuery.of(context).size.longestSide > 990
-          ? MediaQuery.of(context).size.shortestSide * 0.3
-          : MediaQuery.of(context).size.shortestSide * 0.25,
+      height: this.responsivity
+          ? MediaQuery.of(context).size.shortestSide * 0.35
+          : MediaQuery.of(context).size.longestSide > 990
+              ? MediaQuery.of(context).size.shortestSide * 0.4
+              : MediaQuery.of(context).size.shortestSide * 0.45,
+      width: this.responsivity
+          ? MediaQuery.of(context).size.shortestSide * 0.6
+          : MediaQuery.of(context).size.longestSide > 990
+              ? MediaQuery.of(context).size.shortestSide * 0.3
+              : MediaQuery.of(context).size.shortestSide * 0.25,
       child: Column(
         mainAxisAlignment: MainAxisAlignment.spaceBetween,
         crossAxisAlignment: CrossAxisAlignment.center,

@@ -54,6 +54,7 @@ class ThirdSection extends StatelessWidget {
                           "Diagnóstico completo do seu conteúdo detectando todos os pontos de melhorias para o perfil. Nessa análise, você terá o direcionamento e orientações personalizadas para mudanças e evolução do seu perfi.",
                       image: "Analisedeperfil.png",
                       title: "Análise de Perfil.",
+                      responsivity: false,
                     ),
                     SizedBox(
                       width: MediaQuery.of(context).size.shortestSide * 0.1,
@@ -63,15 +64,18 @@ class ThirdSection extends StatelessWidget {
                           "Consultoria personalizada, auxiliando na resolução de problemas, identificando necessidades específicas e agregando valor à marca.",
                       image: "Consultoria.png",
                       title: "Consultoria.",
+                      responsivity: false,
                     ),
                     SizedBox(
                       width: MediaQuery.of(context).size.shortestSide * 0.1,
                     ),
                     CardWidget(
-                        description:
-                            "Encontros presenciais ou remotos com direcionamentos e planejamento de ações estratégicas para o desenvolvimento do perfil.",
-                        image: "Mentoria.png",
-                        title: "Mentoria."),
+                      description:
+                          "Encontros presenciais ou remotos com direcionamentos e planejamento de ações estratégicas para o desenvolvimento do perfil.",
+                      image: "Mentoria.png",
+                      title: "Mentoria.",
+                      responsivity: false,
+                    ),
                   ],
                 ),
                 SizedBox(
@@ -84,6 +88,7 @@ class ThirdSection extends StatelessWidget {
                           "Criação de conteúdo, design, planejamento estratégico, programação de postagem, monitoramento e levantamento de resultados.",
                       image: "Gerenciamentodemidias.png",
                       title: "Gerenciamento de Mídias.",
+                      responsivity: false,
                     ),
                     SizedBox(
                       width: MediaQuery.of(context).size.shortestSide * 0.1,
@@ -93,15 +98,18 @@ class ThirdSection extends StatelessWidget {
                           "Desenvolvimento de identidade visual, site, aplicativo, edições de vídeos e animações em 2D e 3D.",
                       image: "WebDesign.png",
                       title: "Web Design.",
+                      responsivity: false,
                     ),
                     SizedBox(
                       width: MediaQuery.of(context).size.shortestSide * 0.1,
                     ),
                     CardWidget(
-                        description:
-                            "Treinamentos personalizados e direcionados para a sua empresa, sobre: Criação de Conteúdo, Marketing Digital, Marketing de Influência, Empreendedorismo e Oratória.",
-                        image: "Palestrasetreinamentos.png",
-                        title: "Palestras e Treinamentos."),
+                      description:
+                          "Treinamentos personalizados e direcionados para a sua empresa, sobre: Criação de Conteúdo, Marketing Digital, Marketing de Influência, Empreendedorismo e Oratória.",
+                      image: "Palestrasetreinamentos.png",
+                      title: "Palestras e Treinamentos.",
+                      responsivity: false,
+                    ),
                   ],
                 ),
               ],
