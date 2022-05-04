@@ -104,18 +104,21 @@ class InfosTeamWidget extends StatelessWidget {
                               : MediaQuery.of(context).size.width * 0.03,
                         ),
                       ),
-                      IconButton(
-                        onPressed: () async {
-                          Uri url = Uri.parse(urlLinkedin!);
-                          await launchUrl(url);
-                        },
-                        icon: Image.asset(
-                          'linkedin_icon_pink.png',
-                          width: responsivity
-                              ? MediaQuery.of(context).size.shortestSide * 0.04
-                              : MediaQuery.of(context).size.width * 0.03,
-                        ),
-                      ),
+                      urlLinkedin == null
+                          ? Container()
+                          : IconButton(
+                              onPressed: () async {
+                                Uri url = Uri.parse(urlLinkedin!);
+                                await launchUrl(url);
+                              },
+                              icon: Image.asset(
+                                'linkedin_icon_pink.png',
+                                width: responsivity
+                                    ? MediaQuery.of(context).size.shortestSide *
+                                        0.04
+                                    : MediaQuery.of(context).size.width * 0.03,
+                              ),
+                            ),
                       urlBehance == null
                           ? Container()
                           : IconButton(
