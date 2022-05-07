@@ -20,7 +20,10 @@ class CardWidget extends StatelessWidget {
   Widget build(BuildContext context) {
     return SizedBox(
       height: this.responsivity
-          ? MediaQuery.of(context).size.shortestSide * 0.7
+          ? this.title == "Análise de Perfil." ||
+                  this.title == "Palestras e Treinamentos."
+              ? MediaQuery.of(context).size.shortestSide * 0.75
+              : MediaQuery.of(context).size.shortestSide * 0.6
           : MediaQuery.of(context).size.longestSide > 990
               ? MediaQuery.of(context).size.shortestSide * 0.4
               : MediaQuery.of(context).size.shortestSide * 0.45,
@@ -39,7 +42,9 @@ class CardWidget extends StatelessWidget {
             this.title,
             style: TextStyle(
                 color: Color(0xff660099),
-                fontSize: MediaQuery.of(context).size.shortestSide * 0.025,
+                fontSize: responsivity
+                    ? MediaQuery.of(context).size.shortestSide * 0.05
+                    : MediaQuery.of(context).size.shortestSide * 0.025,
                 fontWeight: FontWeight.w900),
             textAlign: TextAlign.center,
           ),
@@ -56,10 +61,12 @@ class CardWidget extends StatelessWidget {
             widget: Text(
               'QUERO ESSA!',
               style: TextStyle(
-                  fontSize: MediaQuery.of(context).size.shortestSide * 0.02),
+                  fontSize: responsivity
+                      ? MediaQuery.of(context).size.shortestSide * 0.04
+                      : MediaQuery.of(context).size.shortestSide * 0.02),
             ),
             color: Color(0xfff23064),
-            width: MediaQuery.of(context).size.shortestSide * 0.15,
+            width: MediaQuery.of(context).size.shortestSide * 0.3,
             height: MediaQuery.of(context).size.shortestSide * 0.045,
             borderRadius: 20,
             url: "https://api.whatsapp.com/send?phone=5584988254344",

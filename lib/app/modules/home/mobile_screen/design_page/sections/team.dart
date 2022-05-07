@@ -7,8 +7,9 @@ class Team extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return SizedBox(
-      height: MediaQuery.of(context).size.shortestSide * 2.3,
-      child: Column(children: [
+      height: MediaQuery.of(context).size.shortestSide * 3.8,
+      child:
+          Column(mainAxisAlignment: MainAxisAlignment.spaceEvenly, children: [
         SizedBox(
           height: MediaQuery.of(context).size.shortestSide * 0.05,
         ),

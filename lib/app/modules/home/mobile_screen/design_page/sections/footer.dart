@@ -19,10 +19,10 @@ class _FooterState extends State<Footer> {
           ),
         ),
         child: SizedBox(
-          height: MediaQuery.of(context).size.shortestSide * 1,
+          height: MediaQuery.of(context).size.shortestSide * 1.3,
           width: MediaQuery.of(context).size.width,
           child: Column(
-            mainAxisAlignment: MainAxisAlignment.spaceAround,
+            mainAxisAlignment: MainAxisAlignment.spaceEvenly,
             children: [
               SizedBox(
                 width: MediaQuery.of(context).size.shortestSide * 0.9,
@@ -45,12 +45,12 @@ class _FooterState extends State<Footer> {
                   'FALE CONOSCO',
                   style: TextStyle(
                       fontSize:
-                          MediaQuery.of(context).size.shortestSide * 0.027),
+                          MediaQuery.of(context).size.shortestSide * 0.04),
                 ),
                 color: Color(0xfff23064),
                 width: MediaQuery.of(context).size.width > 950
                     ? MediaQuery.of(context).size.shortestSide * 0.3
-                    : MediaQuery.of(context).size.shortestSide * 0.2,
+                    : MediaQuery.of(context).size.shortestSide * 0.35,
                 height: MediaQuery.of(context).size.width > 950
                     ? MediaQuery.of(context).size.shortestSide * 0.06
                     : MediaQuery.of(context).size.shortestSide * 0.05,

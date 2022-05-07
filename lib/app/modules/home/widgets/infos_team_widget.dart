@@ -26,7 +26,7 @@ class InfosTeamWidget extends StatelessWidget {
   Widget build(BuildContext context) {
     return SizedBox(
         width: responsivity
-            ? MediaQuery.of(context).size.shortestSide * 1
+            ? MediaQuery.of(context).size.shortestSide
             : MediaQuery.of(context).size.width > 950
                 ? MediaQuery.of(context).size.shortestSide * 0.7
                 : MediaQuery.of(context).size.shortestSide * 0.6,
@@ -44,7 +44,7 @@ class InfosTeamWidget extends StatelessWidget {
             ),
             SizedBox(
               height: responsivity
-                  ? MediaQuery.of(context).size.shortestSide * 0.4
+                  ? MediaQuery.of(context).size.shortestSide * 0.75
                   : MediaQuery.of(context).size.shortestSide * 0.35,
               child: Column(
                 crossAxisAlignment: CrossAxisAlignment.start,
@@ -54,7 +54,7 @@ class InfosTeamWidget extends StatelessWidget {
                     name,
                     style: TextStyle(
                       fontSize: responsivity
-                          ? MediaQuery.of(context).size.shortestSide * 0.042
+                          ? MediaQuery.of(context).size.shortestSide * 0.055
                           : MediaQuery.of(context).size.width > 1045
                               ? MediaQuery.of(context).size.shortestSide * 0.035
                               : MediaQuery.of(context).size.shortestSide * 0.03,
@@ -65,8 +65,8 @@ class InfosTeamWidget extends StatelessWidget {
                   Text(career,
                       style: TextStyle(
                         fontSize: responsivity
-                            ? MediaQuery.of(context).size.shortestSide * 0.025
-                            : MediaQuery.of(context).size.shortestSide * 0.017,
+                            ? MediaQuery.of(context).size.shortestSide * 0.045
+                            : MediaQuery.of(context).size.shortestSide * 0.025,
                         color: Color(0xff660099),
                         fontWeight: FontWeight.w900,
                       )),
@@ -82,12 +82,12 @@ class InfosTeamWidget extends StatelessWidget {
                               fontWeight: FontWeight.w900,
                               fontSize: responsivity
                                   ? MediaQuery.of(context).size.shortestSide *
-                                      0.02
+                                      0.035
                                   : MediaQuery.of(context).size.width > 1045
                                       ? MediaQuery.of(context)
                                               .size
                                               .shortestSide *
-                                          0.018
+                                          0.02
                                       : MediaQuery.of(context)
                                               .size
                                               .shortestSide *
@@ -100,10 +100,10 @@ class InfosTeamWidget extends StatelessWidget {
                           await launchUrl(url);
                         },
                         icon: Image.asset(
-                          'Pink_Instagram.png',
+                          'Icones-Redes_Prancheta1.png',
                           width: responsivity
-                              ? MediaQuery.of(context).size.shortestSide * 0.04
-                              : MediaQuery.of(context).size.width * 0.03,
+                              ? MediaQuery.of(context).size.shortestSide * 0.1
+                              : MediaQuery.of(context).size.shortestSide * 0.1,
                         ),
                       ),
                       urlLinkedin == null
@@ -114,27 +114,26 @@ class InfosTeamWidget extends StatelessWidget {
                                 await launchUrl(url);
                               },
                               icon: Image.asset(
-                                'linkedin_icon_pink.png',
+                                'Icones-Redes-02.png',
                                 width: responsivity
                                     ? MediaQuery.of(context).size.shortestSide *
-                                        0.04
-                                    : MediaQuery.of(context).size.width * 0.03,
+                                        0.1
+                                    : MediaQuery.of(context).size.width * 0.5,
                               ),
                             ),
                       urlBehance == null
                           ? Container()
                           : IconButton(
                               onPressed: () async {
-                                print(urlBehance);
                                 Uri url = Uri.parse(urlBehance!);
                                 await launchUrl(url);
                               },
                               icon: Image.asset(
-                                'behance_pink.png',
+                                'Icones-Redes-03.png',
                                 width: responsivity
                                     ? MediaQuery.of(context).size.shortestSide *
-                                        0.04
-                                    : MediaQuery.of(context).size.width * 0.03,
+                                        0.1
+                                    : MediaQuery.of(context).size.width * 0.5,
                               ),
                             ),
                     ],

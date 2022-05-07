@@ -103,6 +103,9 @@ flutter:
     - linkedin_icon_pink.png
     - Pink_Instagram.png
     - Insta_Logo.png
+    - Icones-Redes_Prancheta1.png
+    - Icones-Redes-02.png
+    - Icones-Redes-03.png
 
   # An image asset can refer to one or more resolution-specific "variants", see
   # https://flutter.dev/assets-and-images/#resolution-aware.

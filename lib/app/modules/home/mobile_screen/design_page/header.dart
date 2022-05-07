@@ -15,11 +15,12 @@ class Header extends StatelessWidget {
           ),
         ),
         child: Padding(
-          padding: const EdgeInsets.only(top: 35),
+          padding: const EdgeInsets.only(top: 25),
           child: SizedBox(
               width: MediaQuery.of(context).size.width,
-              height: MediaQuery.of(context).size.shortestSide * 1.4,
+              height: MediaQuery.of(context).size.shortestSide * 1.6,
               child: Column(
+                mainAxisAlignment: MainAxisAlignment.spaceAround,
                 children: [
                   SizedBox(
                     child: Row(
@@ -69,7 +70,7 @@ class Header extends StatelessWidget {
                     style: TextStyle(
                         fontSize: MediaQuery.of(context).size.shortestSide > 950
                             ? MediaQuery.of(context).size.shortestSide * 0.045
-                            : MediaQuery.of(context).size.shortestSide * 0.035,
+                            : MediaQuery.of(context).size.shortestSide * 0.045,
                         color: Colors.white),
                   ),
                   SizedBox(
@@ -81,10 +82,10 @@ class Header extends StatelessWidget {
                       style: TextStyle(
                           color: Colors.white,
                           fontSize:
-                              MediaQuery.of(context).size.shortestSide * 0.035),
+                              MediaQuery.of(context).size.shortestSide * 0.045),
                     ),
                     color: Color(0xfff23064),
-                    width: MediaQuery.of(context).size.shortestSide * 0.3,
+                    width: MediaQuery.of(context).size.shortestSide * 0.35,
                     height: MediaQuery.of(context).size.shortestSide * 0.06,
                     borderRadius: 20,
                     url: "https://api.whatsapp.com/send?phone=5584988254344",
@@ -95,6 +96,9 @@ class Header extends StatelessWidget {
                   Image.asset(
                     'Elemento01S1.png',
                     width: MediaQuery.of(context).size.shortestSide * 0.5,
+                  ),
+                  SizedBox(
+                    height: MediaQuery.of(context).size.shortestSide * 0.08,
                   ),
                 ],
               )),
