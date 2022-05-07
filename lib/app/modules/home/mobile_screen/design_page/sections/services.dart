@@ -7,7 +7,7 @@ class Services extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return SizedBox(
-      height: MediaQuery.of(context).size.shortestSide * 5.5,
+      height: MediaQuery.of(context).size.shortestSide * 5,
       child: Column(
         mainAxisAlignment: MainAxisAlignment.spaceAround,
         children: [
