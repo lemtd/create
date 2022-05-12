@@ -15,7 +15,6 @@ class _HyperlinkWidgetState extends State<HyperlinkWidget> {
   @override
   Widget build(BuildContext context) {
     var hover = false;
-    // final store = Provider.of<HomeStore>(context);
     return RichText(
       text: TextSpan(
         children: [
@@ -23,7 +22,7 @@ class _HyperlinkWidgetState extends State<HyperlinkWidget> {
               text: this.widget.name,
               style: TextStyle(
                 color: Color.fromARGB(255, 255, 255, 255),
-                fontWeight: hover ? FontWeight.w900 : FontWeight.w200,
+                fontFamily: "AzoSans-regular",
                 fontSize: MediaQuery.of(context).size.longestSide > 950
                     ? MediaQuery.of(context).size.shortestSide * 0.03
                     : MediaQuery.of(context).size.shortestSide * 0.02,
@@ -40,13 +39,11 @@ class _HyperlinkWidgetState extends State<HyperlinkWidget> {
                 },
               mouseCursor: SystemMouseCursors.click,
               onEnter: (event) {
-                // store.setStateCursor();
                 setState(() {
                   hover = true;
                 });
               },
               onExit: (event) {
-                // store.setStateCursor();
                 setState(() {
                   hover = false;
                 });

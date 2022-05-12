@@ -22,8 +22,8 @@ class CardWidget extends StatelessWidget {
       height: this.responsivity
           ? this.title == "Análise de Perfil." ||
                   this.title == "Palestras e Treinamentos."
-              ? MediaQuery.of(context).size.shortestSide * 0.75
-              : MediaQuery.of(context).size.shortestSide * 0.6
+              ? MediaQuery.of(context).size.shortestSide * 0.77
+              : MediaQuery.of(context).size.shortestSide * 0.66
           : MediaQuery.of(context).size.longestSide > 990
               ? MediaQuery.of(context).size.shortestSide * 0.4
               : MediaQuery.of(context).size.shortestSide * 0.45,
@@ -41,17 +41,19 @@ class CardWidget extends StatelessWidget {
           Text(
             this.title,
             style: TextStyle(
-                color: Color(0xff660099),
-                fontSize: responsivity
-                    ? MediaQuery.of(context).size.shortestSide * 0.05
-                    : MediaQuery.of(context).size.shortestSide * 0.025,
-                fontWeight: FontWeight.w900),
+              color: Color(0xff660099),
+              fontSize: responsivity
+                  ? MediaQuery.of(context).size.shortestSide * 0.05
+                  : MediaQuery.of(context).size.shortestSide * 0.025,
+              fontFamily: "AzoSans-black",
+            ),
             textAlign: TextAlign.center,
           ),
           Text(
             this.description,
             textAlign: TextAlign.center,
             style: TextStyle(
+                fontFamily: "AzoSans-regular",
                 color: Color(0xff660099),
                 fontSize: responsivity
                     ? MediaQuery.of(context).size.shortestSide * 0.04
@@ -61,6 +63,7 @@ class CardWidget extends StatelessWidget {
             widget: Text(
               'QUERO ESSA!',
               style: TextStyle(
+                  fontFamily: "AzoSans-black",
                   fontSize: responsivity
                       ? MediaQuery.of(context).size.shortestSide * 0.04
                       : MediaQuery.of(context).size.shortestSide * 0.02),

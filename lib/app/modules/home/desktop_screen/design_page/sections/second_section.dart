@@ -21,18 +21,20 @@ class SecondSection extends StatelessWidget {
                   Text(
                     "Alguns dos nossos clientes destaques",
                     style: TextStyle(
-                        color: Color(0xff660099),
-                        fontSize: MediaQuery.of(context).size.width > 950
-                            ? MediaQuery.of(context).size.shortestSide * 0.05
-                            : MediaQuery.of(context).size.shortestSide * 0.035,
-                        fontWeight: FontWeight.w900),
+                      color: Color(0xff660099),
+                      fontSize: MediaQuery.of(context).size.width > 950
+                          ? MediaQuery.of(context).size.shortestSide * 0.05
+                          : MediaQuery.of(context).size.shortestSide * 0.035,
+                      fontFamily: "AzoSans-black",
+                    ),
                   ),
                   Text(
                     ".",
                     style: TextStyle(
-                        color: Color(0xfff23064),
-                        fontSize: 30,
-                        fontWeight: FontWeight.w900),
+                      color: Color(0xfff23064),
+                      fontSize: 30,
+                      fontFamily: "AzoSans-black",
+                    ),
                   ),
                 ],
               ),
@@ -104,18 +106,20 @@ class SecondSection extends StatelessWidget {
                             Text(
                               "Nossa missão é despertar todo o potencial da",
                               style: TextStyle(
-                                  color: Color(0xff660099),
-                                  fontSize: 45,
-                                  fontWeight: FontWeight.w900),
+                                color: Color(0xff660099),
+                                fontSize: 45,
+                                fontFamily: "AzoSans-regular",
+                              ),
                             ),
                             Row(
                               children: [
                                 Text(
                                   "sua marca",
                                   style: TextStyle(
-                                      color: Color(0xff660099),
-                                      fontSize: 45,
-                                      fontWeight: FontWeight.w900),
+                                    color: Color(0xff660099),
+                                    fontSize: 45,
+                                    fontFamily: "AzoSans-regular",
+                                  ),
                                 ),
                                 Text(
                                   ".",

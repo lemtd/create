@@ -13,24 +13,38 @@ class Team extends StatelessWidget {
         SizedBox(
           height: MediaQuery.of(context).size.shortestSide * 0.05,
         ),
-        Row(
+        Column(
           mainAxisAlignment: MainAxisAlignment.center,
+          crossAxisAlignment: CrossAxisAlignment.center,
           children: [
             Text(
-              'Conheça a equipe por trás da Create',
+              'Conheça a equipe por',
               style: TextStyle(
                 color: Color(0xff660099),
                 fontSize: MediaQuery.of(context).size.shortestSide * 0.055,
-                fontWeight: FontWeight.w900,
+                fontFamily: "AzoSans-black",
               ),
             ),
-            Text(
-              '.',
-              style: TextStyle(
-                color: Color(0xfff23064),
-                fontSize: MediaQuery.of(context).size.shortestSide * 0.055,
-                fontWeight: FontWeight.w900,
-              ),
+            Row(
+              mainAxisAlignment: MainAxisAlignment.center,
+              children: [
+                Text(
+                  'trás da Create',
+                  style: TextStyle(
+                    color: Color(0xff660099),
+                    fontSize: MediaQuery.of(context).size.shortestSide * 0.055,
+                    fontFamily: "AzoSans-black",
+                  ),
+                ),
+                Text(
+                  '.',
+                  style: TextStyle(
+                    color: Color(0xfff23064),
+                    fontSize: MediaQuery.of(context).size.shortestSide * 0.055,
+                    fontFamily: "AzoSans-black",
+                  ),
+                ),
+              ],
             ),
           ],
         ),
@@ -83,7 +97,7 @@ class Team extends StatelessWidget {
           career: "Fotógrafa",
           description:
               "Formada em Design de Interiores, atua na fotografia há quase uma década. Especializada em fotografia dinâmica, criativa e atemporal.",
-          name: "Ruth Medeiros",
+          name: "Amanda Sandy",
           teamImage: "AmandaSandy.png",
           urlInstagram: "https://www.instagram.com/amandasandyfotografia/",
           responsivity: true,

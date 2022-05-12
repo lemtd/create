@@ -37,8 +37,10 @@ class ThirdSection extends StatelessWidget {
                   'Qual solução a sua empresa precisa?',
                   style: TextStyle(
                     color: Color(0xff660099),
-                    fontSize: 30,
-                    fontWeight: FontWeight.w900,
+                    fontSize: MediaQuery.of(context).size.width > 950
+                        ? MediaQuery.of(context).size.shortestSide * 0.05
+                        : MediaQuery.of(context).size.shortestSide * 0.035,
+                    fontFamily: "AzoSans-black",
                   ),
                 ),
                 SizedBox(

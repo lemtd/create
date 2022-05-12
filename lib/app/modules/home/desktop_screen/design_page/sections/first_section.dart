@@ -38,7 +38,7 @@ class FirstSection extends StatelessWidget {
                         'Potencialize os resultados digitais da sua empresa',
                         style: TextStyle(
                             fontSize: 50,
-                            fontWeight: FontWeight.w900,
+                            fontFamily: "AzoSans-black",
                             color: Colors.white),
                       ),
                     ),
@@ -48,6 +48,7 @@ class FirstSection extends StatelessWidget {
                     Text(
                       'Com a Create, sua marca vai além.',
                       style: TextStyle(
+                          fontFamily: "AzoSans-regular",
                           fontSize: MediaQuery.of(context).size.shortestSide >
                                   950
                               ? MediaQuery.of(context).size.shortestSide * 0.045
@@ -61,7 +62,11 @@ class FirstSection extends StatelessWidget {
                     ButtonWidget(
                       widget: Text(
                         'FALE CONOSCO',
-                        style: TextStyle(color: Colors.white, fontSize: 20),
+                        style: TextStyle(
+                          color: Colors.white,
+                          fontSize: 20,
+                          fontFamily: "AzoSans-black",
+                        ),
                       ),
                       color: Color(0xfff23064),
                       width: MediaQuery.of(context).size.shortestSide * 0.3,

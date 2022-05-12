@@ -12,23 +12,40 @@ class Clients extends StatelessWidget {
             SizedBox(
               height: MediaQuery.of(context).size.shortestSide * 0.13,
             ),
-            Row(
+            Column(
               mainAxisAlignment: MainAxisAlignment.center,
               crossAxisAlignment: CrossAxisAlignment.center,
               children: [
                 Text(
-                  "Alguns dos nossos clientes destaques",
+                  "Alguns dos nossos",
                   style: TextStyle(
-                      color: Color(0xff660099),
-                      fontSize: MediaQuery.of(context).size.shortestSide * 0.05,
-                      fontWeight: FontWeight.w900),
+                    fontFamily: "AzoSans-bold",
+                    color: Color(0xff660099),
+                    fontSize: MediaQuery.of(context).size.shortestSide * 0.07,
+                  ),
                 ),
-                Text(
-                  ".",
-                  style: TextStyle(
-                      color: Color(0xfff23064),
-                      fontSize: MediaQuery.of(context).size.shortestSide * 0.05,
-                      fontWeight: FontWeight.w900),
+                Row(
+                  mainAxisAlignment: MainAxisAlignment.center,
+                  children: [
+                    Text(
+                      "clientes destaques",
+                      style: TextStyle(
+                        fontFamily: "AzoSans-bold",
+                        color: Color(0xff660099),
+                        fontSize:
+                            MediaQuery.of(context).size.shortestSide * 0.07,
+                      ),
+                    ),
+                    Text(
+                      ".",
+                      style: TextStyle(
+                        color: Color(0xfff23064),
+                        fontSize:
+                            MediaQuery.of(context).size.shortestSide * 0.07,
+                        fontFamily: "AzoSans-bold",
+                      ),
+                    ),
+                  ],
                 ),
               ],
             ),
@@ -96,7 +113,7 @@ class Clients extends StatelessWidget {
               height: MediaQuery.of(context).size.shortestSide * 0.1,
             ),
             SizedBox(
-                width: MediaQuery.of(context).size.shortestSide * 0.8,
+                width: MediaQuery.of(context).size.shortestSide * 0.85,
                 child: Column(
                   mainAxisAlignment: MainAxisAlignment.center,
                   crossAxisAlignment: CrossAxisAlignment.start,
@@ -104,6 +121,7 @@ class Clients extends StatelessWidget {
                     Text(
                       "Nossa missão é despertar todo",
                       style: TextStyle(
+                          fontFamily: "AzoSans-black",
                           color: Color(0xff660099),
                           fontSize:
                               MediaQuery.of(context).size.shortestSide * 0.055,
@@ -116,6 +134,7 @@ class Clients extends StatelessWidget {
                         Text(
                           "o potencial da sua marca",
                           style: TextStyle(
+                              fontFamily: "AzoSans-black",
                               color: Color(0xff660099),
                               fontSize:
                                   MediaQuery.of(context).size.shortestSide *
@@ -125,6 +144,7 @@ class Clients extends StatelessWidget {
                         Text(
                           ".",
                           style: TextStyle(
+                              fontFamily: "AzoSans-black",
                               color: Color(0xfff23064),
                               fontSize:
                                   MediaQuery.of(context).size.shortestSide *

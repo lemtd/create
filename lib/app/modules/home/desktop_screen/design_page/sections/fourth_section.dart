@@ -24,7 +24,7 @@ class FourthSection extends StatelessWidget {
                     fontSize: MediaQuery.of(context).size.width > 950
                         ? MediaQuery.of(context).size.shortestSide * 0.05
                         : MediaQuery.of(context).size.shortestSide * 0.035,
-                    fontWeight: FontWeight.w900,
+                    fontFamily: "AzoSans-black",
                   ),
                 ),
                 Text(
@@ -83,7 +83,7 @@ class FourthSection extends StatelessWidget {
                   career: "Fotógrafa",
                   description:
                       "Formada em Design de Interiores, atua na fotografia há quase uma década. Especializada em fotografia dinâmica, criativa e atemporal.",
-                  name: "Ruth Medeiros",
+                  name: "Amanda Sandy",
                   teamImage: "AmandaSandy.png",
                   urlInstagram:
                       "https://www.instagram.com/amandasandyfotografia/",

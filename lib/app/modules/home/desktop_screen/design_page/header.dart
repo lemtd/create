@@ -3,9 +3,14 @@ import 'package:flutter/gestures.dart';
 import 'package:flutter/material.dart';
 import 'package:url_launcher/url_launcher.dart';
 
-class Header extends StatelessWidget {
+class Header extends StatefulWidget {
   const Header({Key? key}) : super(key: key);
 
+  @override
+  State<Header> createState() => _HeaderState();
+}
+
+class _HeaderState extends State<Header> {
   @override
   Widget build(BuildContext context) {
     return Padding(
@@ -55,6 +60,7 @@ class Header extends StatelessWidget {
                       Text(
                         'Nos siga no Instagram',
                         style: TextStyle(
+                            fontFamily: "AzoSans-regular",
                             color: Colors.white,
                             fontSize: MediaQuery.of(context).size.width > 950
                                 ? MediaQuery.of(context).size.shortestSide *

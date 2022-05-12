@@ -118,12 +118,37 @@ flutter:
   # "family" key with the font family name, and a "fonts" key with a
   # list giving the asset and other descriptors for the font. For
   # example:
-  # fonts:
-  #   - family: Schyler
-  #     fonts:
-  #       - asset: fonts/Schyler-Regular.ttf
-  #       - asset: fonts/Schyler-Italic.ttf
-  #         style: italic
+  fonts:
+    - family: AzoSans-black
+      fonts:
+        - asset: lib/app/shared/assets/fonts/RuiAbreu-AzoSans-Black.ttf
+    - family: AzoSans-bold
+      fonts:
+        - asset: lib/app/shared/assets/fonts/RuiAbreu-AzoSans-Bold.ttf
+    - family: AzoSans-light
+      fonts:
+        - asset: lib\app\shared\assets\fonts\RuiAbreu-AzoSans-Light.ttf
+    - family: AzoSans-medium
+      fonts:
+        - asset: lib/app/shared/assets/fonts/RuiAbreu-AzoSans-Medium.ttf
+    - family: AzoSans-regular
+      fonts:
+        - asset: lib/app/shared/assets/fonts/RuiAbreu-AzoSans-Regular.ttf
+    - family: AzoSans-thin
+      fonts:
+        - asset: lib/app/shared/assets/fonts/RuiAbreu-AzoSans-Thin.ttf
+        # - asset: fonts/RuiAbreu-AzoSans-Black.otf
+        # - asset: fonts/RuiAbreu-AzoSans-BlackItalic.otf
+        # - asset: fonts/RuiAbreu-AzoSans-Bold.otf
+        # - asset: fonts/RuiAbreu-AzoSans-BoldItalic.otf
+        # - asset: fonts/RuiAbreu-AzoSans-Italic.otf
+        # - asset: fonts/RuiAbreu-AzoSans-Light.otf
+        # - asset: fonts/RuiAbreu-AzoSans-LightItalic.otf
+        # - asset: fonts/RuiAbreu-AzoSans-Medium.otf
+        # - asset: fonts/RuiAbreu-AzoSans-MediumItalic.otf
+        # - asset: fonts/RuiAbreu-AzoSans-Regular.otf
+        # - asset: fonts/RuiAbreu-AzoSans-Thin.otf
+        # - asset: fonts/RuiAbreu-AzoSans-ThinItalic.otf
   #   - family: Trajan Pro
   #     fonts:
   #       - asset: fonts/TrajanPro.ttf

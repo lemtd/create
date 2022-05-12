@@ -54,9 +54,9 @@ class Header extends StatelessWidget {
                     child: Text(
                       'Potencialize os resultados digitais da sua empresa',
                       style: TextStyle(
+                        fontFamily: "AzoSans-bold",
                         fontSize:
                             MediaQuery.of(context).size.shortestSide * 0.07,
-                        fontWeight: FontWeight.w900,
                         color: Colors.white,
                       ),
                       textAlign: TextAlign.center,
@@ -68,9 +68,9 @@ class Header extends StatelessWidget {
                   Text(
                     'Com a Create, sua marca vai além.',
                     style: TextStyle(
-                        fontSize: MediaQuery.of(context).size.shortestSide > 950
-                            ? MediaQuery.of(context).size.shortestSide * 0.045
-                            : MediaQuery.of(context).size.shortestSide * 0.045,
+                        fontFamily: "AzoSans-regular",
+                        fontSize:
+                            MediaQuery.of(context).size.shortestSide * 0.047,
                         color: Colors.white),
                   ),
                   SizedBox(
@@ -80,13 +80,14 @@ class Header extends StatelessWidget {
                     widget: Text(
                       'FALE CONOSCO',
                       style: TextStyle(
+                          fontFamily: "AzoSans-black",
                           color: Colors.white,
                           fontSize:
-                              MediaQuery.of(context).size.shortestSide * 0.045),
+                              MediaQuery.of(context).size.shortestSide * 0.05),
                     ),
                     color: Color(0xfff23064),
-                    width: MediaQuery.of(context).size.shortestSide * 0.35,
-                    height: MediaQuery.of(context).size.shortestSide * 0.06,
+                    width: MediaQuery.of(context).size.shortestSide * 0.5,
+                    height: MediaQuery.of(context).size.shortestSide * 0.07,
                     borderRadius: 20,
                     url: "https://api.whatsapp.com/send?phone=5584988254344",
                   ),

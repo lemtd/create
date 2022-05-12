@@ -7,17 +7,34 @@ class Services extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return SizedBox(
-      height: MediaQuery.of(context).size.shortestSide * 5,
+      height: MediaQuery.of(context).size.shortestSide * 5.5,
       child: Column(
         mainAxisAlignment: MainAxisAlignment.spaceAround,
         children: [
-          Text(
-            'Qual solução a sua empresa precisa?',
-            style: TextStyle(
-              color: Color(0xff660099),
-              fontSize: MediaQuery.of(context).size.shortestSide * 0.055,
-              fontWeight: FontWeight.w900,
-            ),
+          Column(
+            mainAxisAlignment: MainAxisAlignment.center,
+            crossAxisAlignment: CrossAxisAlignment.center,
+            children: [
+              SizedBox(
+                height: MediaQuery.of(context).size.shortestSide * 0.1,
+              ),
+              Text(
+                'Qual solução a sua',
+                style: TextStyle(
+                  color: Color(0xff660099),
+                  fontSize: MediaQuery.of(context).size.shortestSide * 0.055,
+                  fontFamily: "AzoSans-black",
+                ),
+              ),
+              Text(
+                'empresa precisa?',
+                style: TextStyle(
+                  color: Color(0xff660099),
+                  fontSize: MediaQuery.of(context).size.shortestSide * 0.055,
+                  fontFamily: "AzoSans-black",
+                ),
+              ),
+            ],
           ),
           Row(
             mainAxisAlignment: MainAxisAlignment.spaceBetween,

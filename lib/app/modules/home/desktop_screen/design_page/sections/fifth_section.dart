@@ -33,14 +33,16 @@ class FifthSection extends StatelessWidget {
                       child: Text(
                         'Acerele seus resultados digitais com a Create.',
                         style: TextStyle(
-                            color: Colors.white,
-                            fontSize:
-                                MediaQuery.of(context).size.shortestSide * 0.07,
-                            fontWeight: FontWeight.w900),
+                          color: Colors.white,
+                          fontSize:
+                              MediaQuery.of(context).size.shortestSide * 0.07,
+                          fontFamily: "AzoSans-black",
+                        ),
                       ),
                     ),
                     Text('Vamos bater um papo?',
                         style: TextStyle(
+                            fontFamily: "AzoSans-regular",
                             color: Colors.white,
                             fontSize: MediaQuery.of(context).size.width > 950
                                 ? MediaQuery.of(context).size.shortestSide *
@@ -51,6 +53,7 @@ class FifthSection extends StatelessWidget {
                       widget: Text(
                         'FALE CONOSCO',
                         style: TextStyle(
+                            fontFamily: "AzoSans-black",
                             fontSize: MediaQuery.of(context).size.width > 950
                                 ? MediaQuery.of(context).size.shortestSide *
                                     0.02

@@ -59,7 +59,7 @@ class InfosTeamWidget extends StatelessWidget {
                               ? MediaQuery.of(context).size.shortestSide * 0.035
                               : MediaQuery.of(context).size.shortestSide * 0.03,
                       color: Color(0xff660099),
-                      fontWeight: FontWeight.w900,
+                      fontFamily: "AzoSans-black",
                     ),
                   ),
                   Text(career,
@@ -68,7 +68,7 @@ class InfosTeamWidget extends StatelessWidget {
                             ? MediaQuery.of(context).size.shortestSide * 0.045
                             : MediaQuery.of(context).size.shortestSide * 0.025,
                         color: Color(0xff660099),
-                        fontWeight: FontWeight.w900,
+                        fontFamily: "AzoSans-black",
                       )),
                   SizedBox(
                       width: responsivity
@@ -79,7 +79,7 @@ class InfosTeamWidget extends StatelessWidget {
                       child: Text(description,
                           style: TextStyle(
                               color: Color(0xff660099),
-                              fontWeight: FontWeight.w900,
+                              fontFamily: "AzoSans-regular",
                               fontSize: responsivity
                                   ? MediaQuery.of(context).size.shortestSide *
                                       0.035

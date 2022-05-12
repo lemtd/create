@@ -29,14 +29,16 @@ class _FooterState extends State<Footer> {
                 child: Text(
                   'Acerele seus resultados digitais com a Create.',
                   style: TextStyle(
-                      color: Colors.white,
-                      fontSize: MediaQuery.of(context).size.shortestSide * 0.07,
-                      fontWeight: FontWeight.w900),
+                    color: Colors.white,
+                    fontSize: MediaQuery.of(context).size.shortestSide * 0.07,
+                    fontFamily: "AzoSans-black",
+                  ),
                   textAlign: TextAlign.center,
                 ),
               ),
               Text('Vamos bater um papo?',
                   style: TextStyle(
+                      fontFamily: "AzoSans-regular",
                       color: Colors.white,
                       fontSize:
                           MediaQuery.of(context).size.shortestSide * 0.05)),
@@ -44,6 +46,7 @@ class _FooterState extends State<Footer> {
                 widget: Text(
                   'FALE CONOSCO',
                   style: TextStyle(
+                      fontFamily: "AzoSans-black",
                       fontSize:
                           MediaQuery.of(context).size.shortestSide * 0.04),
                 ),
