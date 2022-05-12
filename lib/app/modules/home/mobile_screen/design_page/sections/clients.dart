@@ -124,8 +124,7 @@ class Clients extends StatelessWidget {
                           fontFamily: "AzoSans-black",
                           color: Color(0xff660099),
                           fontSize:
-                              MediaQuery.of(context).size.shortestSide * 0.055,
-                          fontWeight: FontWeight.w900),
+                              MediaQuery.of(context).size.shortestSide * 0.055),
                       textAlign: TextAlign.center,
                     ),
                     Row(
@@ -134,12 +133,11 @@ class Clients extends StatelessWidget {
                         Text(
                           "o potencial da sua marca",
                           style: TextStyle(
-                              fontFamily: "AzoSans-black",
-                              color: Color(0xff660099),
-                              fontSize:
-                                  MediaQuery.of(context).size.shortestSide *
-                                      0.055,
-                              fontWeight: FontWeight.w900),
+                            color: Color(0xff660099),
+                            fontFamily: "AzoSans-black",
+                            fontSize: MediaQuery.of(context).size.shortestSide *
+                                0.055,
+                          ),
                         ),
                         Text(
                           ".",

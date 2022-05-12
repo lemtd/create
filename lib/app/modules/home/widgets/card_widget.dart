@@ -64,9 +64,9 @@ class CardWidget extends StatelessWidget {
               'QUERO ESSA!',
               style: TextStyle(
                   fontFamily: "AzoSans-black",
-                  fontSize: responsivity
-                      ? MediaQuery.of(context).size.shortestSide * 0.04
-                      : MediaQuery.of(context).size.shortestSide * 0.02),
+                  fontSize: MediaQuery.of(context).size.width > 400
+                      ? MediaQuery.of(context).size.shortestSide * 0.03
+                      : MediaQuery.of(context).size.shortestSide * 0.04),
             ),
             color: Color(0xfff23064),
             width: MediaQuery.of(context).size.shortestSide * 0.3,

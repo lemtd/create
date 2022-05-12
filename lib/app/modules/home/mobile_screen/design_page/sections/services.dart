@@ -22,16 +22,16 @@ class Services extends StatelessWidget {
                 'Qual solução a sua',
                 style: TextStyle(
                   color: Color(0xff660099),
-                  fontSize: MediaQuery.of(context).size.shortestSide * 0.055,
-                  fontFamily: "AzoSans-black",
+                  fontFamily: "AzoSans-bold",
+                  fontSize: MediaQuery.of(context).size.shortestSide * 0.07,
                 ),
               ),
               Text(
                 'empresa precisa?',
                 style: TextStyle(
                   color: Color(0xff660099),
-                  fontSize: MediaQuery.of(context).size.shortestSide * 0.055,
-                  fontFamily: "AzoSans-black",
+                  fontFamily: "AzoSans-bold",
+                  fontSize: MediaQuery.of(context).size.shortestSide * 0.07,
                 ),
               ),
             ],

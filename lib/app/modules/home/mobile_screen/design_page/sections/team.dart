@@ -21,8 +21,8 @@ class Team extends StatelessWidget {
               'Conheça a equipe por',
               style: TextStyle(
                 color: Color(0xff660099),
-                fontSize: MediaQuery.of(context).size.shortestSide * 0.055,
-                fontFamily: "AzoSans-black",
+                fontFamily: "AzoSans-bold",
+                fontSize: MediaQuery.of(context).size.shortestSide * 0.07,
               ),
             ),
             Row(
@@ -32,16 +32,16 @@ class Team extends StatelessWidget {
                   'trás da Create',
                   style: TextStyle(
                     color: Color(0xff660099),
-                    fontSize: MediaQuery.of(context).size.shortestSide * 0.055,
-                    fontFamily: "AzoSans-black",
+                    fontFamily: "AzoSans-bold",
+                    fontSize: MediaQuery.of(context).size.shortestSide * 0.07,
                   ),
                 ),
                 Text(
                   '.',
                   style: TextStyle(
                     color: Color(0xfff23064),
-                    fontSize: MediaQuery.of(context).size.shortestSide * 0.055,
-                    fontFamily: "AzoSans-black",
+                    fontFamily: "AzoSans-bold",
+                    fontSize: MediaQuery.of(context).size.shortestSide * 0.07,
                   ),
                 ),
               ],

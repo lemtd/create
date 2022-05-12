@@ -47,8 +47,9 @@ class _FooterState extends State<Footer> {
                   'FALE CONOSCO',
                   style: TextStyle(
                       fontFamily: "AzoSans-black",
-                      fontSize:
-                          MediaQuery.of(context).size.shortestSide * 0.04),
+                      fontSize: MediaQuery.of(context).size.width > 400
+                          ? MediaQuery.of(context).size.shortestSide * 0.03
+                          : MediaQuery.of(context).size.shortestSide * 0.04),
                 ),
                 color: Color(0xfff23064),
                 width: MediaQuery.of(context).size.width > 950

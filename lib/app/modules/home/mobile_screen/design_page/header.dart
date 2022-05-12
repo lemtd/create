@@ -82,8 +82,10 @@ class Header extends StatelessWidget {
                       style: TextStyle(
                           fontFamily: "AzoSans-black",
                           color: Colors.white,
-                          fontSize:
-                              MediaQuery.of(context).size.shortestSide * 0.05),
+                          fontSize: MediaQuery.of(context).size.width > 400
+                              ? MediaQuery.of(context).size.shortestSide * 0.04
+                              : MediaQuery.of(context).size.shortestSide *
+                                  0.05),
                     ),
                     color: Color(0xfff23064),
                     width: MediaQuery.of(context).size.shortestSide * 0.5,
