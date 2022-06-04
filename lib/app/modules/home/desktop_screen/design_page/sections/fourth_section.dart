@@ -43,17 +43,35 @@ class FourthSection extends StatelessWidget {
             ),
             Row(
               mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+              crossAxisAlignment: CrossAxisAlignment.start,
               children: [
-                InfosTeamWidget(
-                  career: "Estrategista Digital",
-                  description:
-                      "Diretor Executivo da Seja Create. Atuo no mercado como estrategista digital há mais de 4 anos, e também como Palestrante, Consultor e Mentor para Marcas e Influencers",
-                  name: "José Patrício",
-                  teamImage: "JosePatricio.png",
-                  urlInstagram: "https://www.instagram.com/josepatriciosn/",
-                  urlLinkedin:
-                      "https://www.linkedin.com/in/jos%C3%A9-patr%C3%ADcio-883217168/",
-                  responsivity: false,
+                Column(
+                  children: [
+                    InfosTeamWidget(
+                      career: "Estrategista Digital",
+                      description:
+                          "Diretor Executivo da Seja Create. Atuo no mercado como estrategista digital há mais de 4 anos, e também como Palestrante, Consultor e Mentor para Marcas e Influencers",
+                      name: "José Patrício",
+                      teamImage: "JosePatricio.png",
+                      urlInstagram: "https://www.instagram.com/josepatriciosn/",
+                      urlLinkedin:
+                          "https://www.linkedin.com/in/jos%C3%A9-patr%C3%ADcio-883217168/",
+                      responsivity: false,
+                    ),
+                    SizedBox(
+                      height: 80,
+                    ),
+                    InfosTeamWidget(
+                      career: "Fotógrafa",
+                      description:
+                          "Formada em Design de Interiores, atua na fotografia há quase uma década. Especializada em fotografia dinâmica, criativa e atemporal.",
+                      name: "Amanda Sandy",
+                      teamImage: "AmandaSandy.png",
+                      urlInstagram:
+                          "https://www.instagram.com/amandasandyfotografia/",
+                      responsivity: false,
+                    ),
+                  ],
                 ),
                 InfosTeamWidget(
                   career: "Estrategista Digital",
@@ -68,33 +86,6 @@ class FourthSection extends StatelessWidget {
                 ),
               ],
             ),
-            Row(
-              mainAxisAlignment: MainAxisAlignment.spaceEvenly,
-              children: [
-                InfosTeamWidget(
-                  career: "Designer",
-                  description:
-                      "Atua no mercado há mais de 4 anos, tem experiência como designer para empresas das mais diversas areas.",
-                  name: "Liege Souza",
-                  teamImage: "LiegeSouza.png",
-                  urlInstagram: "https://www.instagram.com/liegesouza/",
-                  urlLinkedin: "https://www.linkedin.com/in/liegesouza/",
-                  urlBehance:
-                      "https://www.behance.net/gallery/134814161/Portfolio-e-Curriculo",
-                  responsivity: false,
-                ),
-                InfosTeamWidget(
-                  career: "Fotógrafa",
-                  description:
-                      "Formada em Design de Interiores, atua na fotografia há quase uma década. Especializada em fotografia dinâmica, criativa e atemporal.",
-                  name: "Amanda Sandy",
-                  teamImage: "AmandaSandy.png",
-                  urlInstagram:
-                      "https://www.instagram.com/amandasandyfotografia/",
-                  responsivity: false,
-                ),
-              ],
-            )
           ],
         ),
       ),
