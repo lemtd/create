@@ -14,7 +14,7 @@ class Header extends StatefulWidget {
 class _HeaderState extends State<Header> {
   scrollToSection(int index) async {
     final key = widget.links[index].currentContext!;
-    await Scrollable.ensureVisible(key);
+    await Scrollable.ensureVisible(key, duration: Duration(milliseconds: 600));
   }
 
   @override
@@ -83,18 +83,7 @@ class _HeaderState extends State<Header> {
                     ],
                     onTap: (int index) => scrollToSection(index),
                   ),
-                )
-                // Row(
-                //   mainAxisAlignment: MainAxisAlignment.spaceEvenly,
-                //   children: [
-                //     HyperlinkWidget(name: 'Início'),
-                //     HyperlinkWidget(name: 'Soluções'),
-                //     HyperlinkWidget(name: 'Clientes'),
-                //     HyperlinkWidget(name: 'Equipe'),
-                //     HyperlinkWidget(name: 'Entre em contato'),
-                //   ],
-                // ),
-                ),
+                )),
             SizedBox(
               width: MediaQuery.of(context).size.width > 950
                   ? MediaQuery.of(context).size.shortestSide * 0.33
