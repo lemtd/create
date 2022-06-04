@@ -49,14 +49,6 @@ class SecondSection extends StatelessWidget {
                   crossAxisAlignment: CrossAxisAlignment.center,
                   children: [
                     Image.asset(
-                      'LOGO01.png',
-                      width: MediaQuery.of(context).size.width > 950
-                          ? MediaQuery.of(context).size.width > 950
-                              ? MediaQuery.of(context).size.shortestSide * 0.2
-                              : MediaQuery.of(context).size.shortestSide * 0.15
-                          : MediaQuery.of(context).size.shortestSide * 0.15,
-                    ),
-                    Image.asset(
                       'LOGO02.png',
                       width: MediaQuery.of(context).size.width > 950
                           ? MediaQuery.of(context).size.shortestSide * 0.2
@@ -64,12 +56,6 @@ class SecondSection extends StatelessWidget {
                     ),
                     Image.asset(
                       'LOGO03.png',
-                      width: MediaQuery.of(context).size.width > 950
-                          ? MediaQuery.of(context).size.shortestSide * 0.2
-                          : MediaQuery.of(context).size.shortestSide * 0.15,
-                    ),
-                    Image.asset(
-                      'LOGO04.png',
                       width: MediaQuery.of(context).size.width > 950
                           ? MediaQuery.of(context).size.shortestSide * 0.2
                           : MediaQuery.of(context).size.shortestSide * 0.15,
@@ -87,7 +73,13 @@ class SecondSection extends StatelessWidget {
                           : MediaQuery.of(context).size.shortestSide * 0.15,
                     ),
                     Image.asset(
-                      'LOGO07.png',
+                      'Logo08.png',
+                      width: MediaQuery.of(context).size.width > 950
+                          ? MediaQuery.of(context).size.shortestSide * 0.2
+                          : MediaQuery.of(context).size.shortestSide * 0.15,
+                    ),
+                    Image.asset(
+                      'Logo09.png',
                       width: MediaQuery.of(context).size.width > 950
                           ? MediaQuery.of(context).size.shortestSide * 0.2
                           : MediaQuery.of(context).size.shortestSide * 0.15,
