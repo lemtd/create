@@ -2,11 +2,15 @@ import 'package:create/app/modules/home/widgets/button_widget.dart';
 import 'package:flutter/material.dart';
 
 class FifthSection extends StatelessWidget {
-  const FifthSection({Key? key}) : super(key: key);
+  const FifthSection({Key? key, required this.index, required this.links})
+      : super(key: key);
+  final int index;
+  final List<GlobalKey> links;
 
   @override
   Widget build(BuildContext context) {
     return Container(
+        key: links[index],
         decoration: BoxDecoration(
           image: DecorationImage(
             image: AssetImage("BackgroundS5.png"),

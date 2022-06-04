@@ -1,11 +1,15 @@
 import 'package:flutter/material.dart';
 
 class SecondSection extends StatelessWidget {
-  const SecondSection({Key? key}) : super(key: key);
+  const SecondSection({Key? key, required this.index, required this.links})
+      : super(key: key);
+  final int index;
+  final List<GlobalKey> links;
 
   @override
   Widget build(BuildContext context) {
     return SizedBox(
+      key: links[index],
       height: MediaQuery.of(context).size.shortestSide * 1.2,
       child: Padding(
         padding: EdgeInsets.symmetric(

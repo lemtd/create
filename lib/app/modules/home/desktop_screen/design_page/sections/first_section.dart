@@ -3,11 +3,15 @@ import 'package:create/app/modules/home/widgets/button_widget.dart';
 import 'package:flutter/material.dart';
 
 class FirstSection extends StatelessWidget {
-  const FirstSection({Key? key}) : super(key: key);
+  const FirstSection({Key? key, required this.index, required this.links})
+      : super(key: key);
+  final int index;
+  final List<GlobalKey> links;
 
   @override
   Widget build(BuildContext context) {
     return Container(
+      key: links[index],
       decoration: BoxDecoration(
         image: DecorationImage(
           image: AssetImage("BackgroundS1.png"),
@@ -18,7 +22,9 @@ class FirstSection extends StatelessWidget {
         height: MediaQuery.of(context).size.shortestSide * 1,
         child: Column(
           children: [
-            Header(),
+            Header(
+              links: links,
+            ),
             SizedBox(
               height: 85,
             ),

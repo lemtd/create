@@ -2,11 +2,15 @@ import 'package:create/app/modules/home/widgets/card_widget.dart';
 import 'package:flutter/material.dart';
 
 class ThirdSection extends StatelessWidget {
-  const ThirdSection({Key? key}) : super(key: key);
+  const ThirdSection({Key? key, required this.index, required this.links})
+      : super(key: key);
+  final int index;
+  final List<GlobalKey> links;
 
   @override
   Widget build(BuildContext context) {
     return Padding(
+      key: links[index],
       padding: EdgeInsets.symmetric(
           vertical: MediaQuery.of(context).size.width > 950 ? 60 : 30),
       child: SizedBox(

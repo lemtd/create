@@ -2,11 +2,15 @@ import 'package:create/app/modules/home/widgets/infos_team_widget.dart';
 import 'package:flutter/material.dart';
 
 class FourthSection extends StatelessWidget {
-  const FourthSection({Key? key}) : super(key: key);
+  const FourthSection({Key? key, required this.index, required this.links})
+      : super(key: key);
+  final int index;
+  final List<GlobalKey> links;
 
   @override
   Widget build(BuildContext context) {
     return Padding(
+      key: links[index],
       padding: const EdgeInsets.only(top: 60),
       child: SizedBox(
         height: MediaQuery.of(context).size.shortestSide * 1.3,

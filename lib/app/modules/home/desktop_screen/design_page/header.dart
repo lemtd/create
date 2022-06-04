@@ -4,13 +4,19 @@ import 'package:flutter/material.dart';
 import 'package:url_launcher/url_launcher.dart';
 
 class Header extends StatefulWidget {
-  const Header({Key? key}) : super(key: key);
+  const Header({Key? key, required this.links}) : super(key: key);
+  final List<GlobalKey> links;
 
   @override
   State<Header> createState() => _HeaderState();
 }
 
 class _HeaderState extends State<Header> {
+  scrollToSection(int index) async {
+    final key = widget.links[index].currentContext!;
+    await Scrollable.ensureVisible(key);
+  }
+
   @override
   Widget build(BuildContext context) {
     return Padding(
@@ -26,18 +32,69 @@ class _HeaderState extends State<Header> {
                   : MediaQuery.of(context).size.shortestSide * 0.13,
             ),
             SizedBox(
-              width: MediaQuery.of(context).size.shortestSide * 0.9,
-              child: Row(
-                mainAxisAlignment: MainAxisAlignment.spaceEvenly,
-                children: [
-                  HyperlinkWidget(name: 'Início'),
-                  HyperlinkWidget(name: 'Soluções'),
-                  HyperlinkWidget(name: 'Clientes'),
-                  HyperlinkWidget(name: 'Equipe'),
-                  HyperlinkWidget(name: 'Entre em contato'),
-                ],
-              ),
-            ),
+                width: MediaQuery.of(context).size.width > 1115
+                    ? MediaQuery.of(context).size.shortestSide * 1.2
+                    : MediaQuery.of(context).size.shortestSide * 0.9,
+                child: DefaultTabController(
+                  length: 5,
+                  child: TabBar(
+                    indicatorColor: Colors.white,
+                    tabs: [
+                      Tab(
+                          child: Text(
+                        "Início",
+                        style: TextStyle(
+                          color: Color.fromARGB(255, 255, 255, 255),
+                          fontFamily: "AzoSans-regular",
+                        ),
+                      )),
+                      Tab(
+                          child: Text(
+                        "Soluções",
+                        style: TextStyle(
+                          color: Color.fromARGB(255, 255, 255, 255),
+                          fontFamily: "AzoSans-regular",
+                        ),
+                      )),
+                      Tab(
+                          child: Text(
+                        "Clientes",
+                        style: TextStyle(
+                          color: Color.fromARGB(255, 255, 255, 255),
+                          fontFamily: "AzoSans-regular",
+                        ),
+                      )),
+                      Tab(
+                          child: Text(
+                        "Equipe",
+                        style: TextStyle(
+                          color: Color.fromARGB(255, 255, 255, 255),
+                          fontFamily: "AzoSans-regular",
+                        ),
+                      )),
+                      Tab(
+                          child: Text(
+                        "Entre em contato",
+                        style: TextStyle(
+                          color: Color.fromARGB(255, 255, 255, 255),
+                          fontFamily: "AzoSans-regular",
+                        ),
+                      ))
+                    ],
+                    onTap: (int index) => scrollToSection(index),
+                  ),
+                )
+                // Row(
+                //   mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+                //   children: [
+                //     HyperlinkWidget(name: 'Início'),
+                //     HyperlinkWidget(name: 'Soluções'),
+                //     HyperlinkWidget(name: 'Clientes'),
+                //     HyperlinkWidget(name: 'Equipe'),
+                //     HyperlinkWidget(name: 'Entre em contato'),
+                //   ],
+                // ),
+                ),
             SizedBox(
               width: MediaQuery.of(context).size.width > 950
                   ? MediaQuery.of(context).size.shortestSide * 0.33

@@ -10,14 +10,37 @@ class DesktopScreen extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
+    final List<GlobalKey> links = [
+      GlobalKey(),
+      GlobalKey(),
+      GlobalKey(),
+      GlobalKey(),
+      GlobalKey()
+    ];
+
     return SingleChildScrollView(
       child: Column(
         children: [
-          FirstSection(),
-          SecondSection(),
-          ThirdSection(),
-          FourthSection(),
-          FifthSection(),
+          FirstSection(
+            links: links,
+            index: 0,
+          ),
+          SecondSection(
+            links: links,
+            index: 2,
+          ),
+          ThirdSection(
+            links: links,
+            index: 1,
+          ),
+          FourthSection(
+            links: links,
+            index: 3,
+          ),
+          FifthSection(
+            links: links,
+            index: 4,
+          ),
         ],
       ),
     );
