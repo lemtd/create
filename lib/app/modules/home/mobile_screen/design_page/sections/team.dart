@@ -7,7 +7,7 @@ class Team extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return SizedBox(
-      height: MediaQuery.of(context).size.shortestSide * 3.8,
+      height: MediaQuery.of(context).size.shortestSide * 2.8,
       child:
           Column(mainAxisAlignment: MainAxisAlignment.spaceEvenly, children: [
         SizedBox(
@@ -73,21 +73,6 @@ class Team extends StatelessWidget {
           teamImage: "RuthMedeiros.png",
           urlInstagram: "https://www.instagram.com/ruthmedeiros_/",
           urlLinkedin: "https://www.linkedin.com/in/ruth-medeiros-405087221/",
-          responsivity: true,
-        ),
-        SizedBox(
-          height: MediaQuery.of(context).size.shortestSide * 0.1,
-        ),
-        InfosTeamWidget(
-          career: "Designer",
-          description:
-              "Atua no mercado há mais de 4 anos, tem experiência como designer para empresas das mais diversas areas.",
-          name: "Liege Souza",
-          teamImage: "LiegeSouza.png",
-          urlInstagram: "https://www.instagram.com/liegesouza/",
-          urlLinkedin: "https://www.linkedin.com/in/liegesouza/",
-          urlBehance:
-              "https://www.behance.net/gallery/134814161/Portfolio-e-Curriculo",
           responsivity: true,
         ),
         SizedBox(

@@ -70,7 +70,7 @@ class CardWidget extends StatelessWidget {
             ),
             color: Color(0xfff23064),
             width: MediaQuery.of(context).size.shortestSide * 0.3,
-            height: MediaQuery.of(context).size.shortestSide * 0.045,
+            height: MediaQuery.of(context).size.shortestSide * 0.04,
             borderRadius: 20,
             url: "https://api.whatsapp.com/send?phone=5584988254344",
           )
