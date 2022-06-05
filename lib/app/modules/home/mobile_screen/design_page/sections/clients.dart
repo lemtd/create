@@ -6,7 +6,7 @@ class Clients extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return SizedBox(
-        height: MediaQuery.of(context).size.shortestSide * 2.2,
+        height: MediaQuery.of(context).size.shortestSide * 2,
         child: Column(
           children: [
             SizedBox(
@@ -59,7 +59,7 @@ class Clients extends StatelessWidget {
                   mainAxisAlignment: MainAxisAlignment.center,
                   children: [
                     Image.asset(
-                      'LOGO01.png',
+                      'Logo08.png',
                       width: MediaQuery.of(context).size.shortestSide * 0.25,
                     ),
                     SizedBox(
@@ -82,7 +82,7 @@ class Clients extends StatelessWidget {
                       width: MediaQuery.of(context).size.shortestSide * 0.08,
                     ),
                     Image.asset(
-                      'LOGO04.png',
+                      'Logo09.png',
                       width: MediaQuery.of(context).size.shortestSide * 0.25,
                     ),
                   ],
@@ -102,10 +102,6 @@ class Clients extends StatelessWidget {
                       width: MediaQuery.of(context).size.shortestSide * 0.25,
                     ),
                   ],
-                ),
-                Image.asset(
-                  'LOGO07.png',
-                  width: MediaQuery.of(context).size.shortestSide * 0.25,
                 ),
               ]),
             ),
