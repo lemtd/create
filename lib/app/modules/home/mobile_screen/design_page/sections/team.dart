@@ -63,7 +63,7 @@ class Team extends StatelessWidget {
           responsivity: true,
         ),
         SizedBox(
-          height: MediaQuery.of(context).size.shortestSide * 0.1,
+          height: MediaQuery.of(context).size.shortestSide * 0.05,
         ),
         InfosTeamWidget(
           career: "Estrategista Digital",
@@ -76,7 +76,7 @@ class Team extends StatelessWidget {
           responsivity: true,
         ),
         SizedBox(
-          height: MediaQuery.of(context).size.shortestSide * 0.1,
+          height: MediaQuery.of(context).size.shortestSide * 0.05,
         ),
         InfosTeamWidget(
           career: "Fotógrafa",
@@ -86,6 +86,9 @@ class Team extends StatelessWidget {
           teamImage: "AmandaSandy.png",
           urlInstagram: "https://www.instagram.com/amandasandyfotografia/",
           responsivity: true,
+        ),
+        SizedBox(
+          height: MediaQuery.of(context).size.shortestSide * 0.1,
         ),
       ]),
     );

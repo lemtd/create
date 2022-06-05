@@ -151,7 +151,7 @@ class Services extends StatelessWidget {
             ],
           ),
           SizedBox(
-            height: 1,
+            height: 0.1,
           )
         ],
       ),
